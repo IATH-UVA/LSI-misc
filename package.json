@@ -1,0 +1,20 @@
+{
+  "name": "lsi-misc",
+  "version": "1.0.0",
+  "description": "various tools for the landscape studies initiative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sort": "node ./tools/imageDictionary.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siteations/LSI-misc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siteations/LSI-misc/issues"
+  },
+  "homepage": "https://github.com/siteations/LSI-misc#readme"
+}
