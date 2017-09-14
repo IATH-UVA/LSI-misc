@@ -2,42 +2,97 @@ const fs = require('fs');
 const { StringDecoder } = require('string_decoder');
 
 const decoder = new StringDecoder('utf8');
-//const list = require('../data/FLS_MetadataForParsing.csv');
+const location = '../data/photos/FLS_LocationsInventory.csv';
 
-const list = fs.readFileSync('../data/FLS_LocationsInventory.csv');
-const content = decoder.write(list).split('\r\n'); //read and break up csv into rows
+const list = fs.readFileSync(location);
+const content = decoder.write(list).split('\n'); //read and break up csv into rows
 
-//grab headers in nameArr
+//condense and grab values
 
 const nameArr = [];
+const keys = [];
 
-var item = content[0];
+var item = content.shift();
 var elements = item.split(';');
-for (i=0; i<elements.length; i++){
+
+
+for (var i=0; i<elements.length; i++){
+
 	if (nameArr.indexOf(elements[i])>-1 && nameArr.indexOf(elements[i]+'(1)')>-1){
 		nameArr.push(elements[i]+'(2)');
 	} else if (nameArr.indexOf(elements[i])>-1){
 		nameArr.push(elements[i]+'(1)');
 	} else {
 		nameArr.push(elements[i]);
+		keys.push(elements[i]);
 	}
+
 };
 
-content.shift(); // get rid of that
+console.log(keys);
+
+/* [ 'Processor',
+  'image.ID',
+  'sheet name',
+  'sheet and slide number',
+  'Title',
+  'Title.object',
+  'Title.workType',
+  'Title.imageView',
+  'Location.type',
+  'Location.country',
+  'Location.state-province',
+  'Location.city-county',
+  'Location.repository',
+  'Location.ARTSTOR',
+  'creator.Name',
+  'creator.Nationality',
+  'creator.Dates',
+  'creator.Role',
+  'creator.NameSource',
+  'creator.Display',
+  'Date.earliest',
+  'Date.latest',
+  'Date.display',
+  'Date.stylePeriod',
+  'Date.stylePeriod.source',
+  '#culturalContext',
+  '#culturalContext.source',
+  'keyword',
+  'Subject.source',
+  'Source.photographer',
+  'source.Contributor',
+  'Source.institutionalContributor',
+  'Source.date',
+  'Source.Displaydate',
+  'dateScanned',
+  'dateProcessed',
+  'Rights' ]
+
+  */
 
 //create json from rows
 const rowObjs=content.map(row=>{
 	let items= row.split(';');
 	let newObj = {};
 
-	for (i=0; i<items.length; i++){
-		newObj[nameArr[i]]=items[i];
+	for (var i=0; i<56; i++){
+		let final = (nameArr[i]).length;
+
+		if (nameArr[i][final-1]===')' && items[i]!==''){ //condense down so everything is an array
+			newObj[nameArr[i].slice(0,-3)]=newObj[nameArr[i].slice(0,-3)].concat(items[i]);
+		} else if (items[i]!==''){
+
+			newObj[nameArr[i]]=[items[i]];
+		} else if (items[i]===''){
+			newObj[nameArr[i]]=[];
+		}
 	}
 
 	return newObj;
 })
 
-console.log(rowObjs); // great json to work with....
+// great json to work with....
 
 
 //-------------------------------BASIC QUESTIONS FOR THIS DATABASE/PHOTOSET (in relation to the book)------------------------------------------------
@@ -52,3 +107,23 @@ console.log(rowObjs); // great json to work with....
 4. What is the best way to sort by chapter/focus in order to facilitate text/image integration?? (conceptual question, but answer new week for integration with RA mterials)
 
 */
+
+//-------------------------------BASIC QUESTIONS AS CODE------------------------------
+
+
+//1. simple count of unique sites
+
+const count={}
+
+rowObjs.forEach(entry=>{
+
+
+	if (count[entry['Title']]){
+		count[entry['Title']]++;
+	} else {
+		count[entry['Title']]=1;
+	}
+
+})
+
+console.log(count);
