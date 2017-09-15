@@ -29,7 +29,7 @@ for (var i=0; i<elements.length; i++){
 
 };
 
-console.log(keys);
+//console.log(keys);
 
 /* [ 'Processor',
   'image.ID',
@@ -113,17 +113,21 @@ const rowObjs=content.map(row=>{
 
 //1. simple count of unique sites
 
-const count={}
+const count={};
+const edit=[];
 
 rowObjs.forEach(entry=>{
+  if (entry['Title'][0] && (entry['Title'][0].includes(',') || entry['Title'][0].includes(')') || entry['Title'][0].includes(':'))){
+    if (edit.indexOf(entry['Title'][0])=== -1) { edit.push(entry['Title'][0])}
+  }
 
 
-	if (count[entry['Title']]){
-		count[entry['Title']]++;
+	if (count[entry['Title'][0]]){
+		count[entry['Title'][0]]++;
 	} else {
-		count[entry['Title']]=1;
+		count[entry['Title'][0]]=1;
 	}
 
 })
 
-console.log(count);
+console.log('to edit', edit, edit.length); // so those are much less organized
