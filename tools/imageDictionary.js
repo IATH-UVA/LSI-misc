@@ -2,7 +2,7 @@ const fs = require('fs');
 const { StringDecoder } = require('string_decoder');
 
 const decoder = new StringDecoder('utf8');
-const location = '../data/photos/FLS_LocationsInventory.csv';
+const location = '../data/FLS_LocationsInventory.csv';
 
 const list = fs.readFileSync(location);
 const content = decoder.write(list).split('\n'); //read and break up csv into rows
@@ -114,6 +114,7 @@ const rowObjs=content.map(row=>{
 //1. simple count of unique sites
 
 const count={};
+var countlen=0;
 const edit=[];
 
 rowObjs.forEach(entry=>{
@@ -123,11 +124,23 @@ rowObjs.forEach(entry=>{
 
 
 	if (count[entry['Title'][0]]){
-		count[entry['Title'][0]]++;
+		count[entry['Title'][0]].count ++;
 	} else {
-		count[entry['Title'][0]]=1;
+		count[entry['Title'][0]]={};
+		 count[entry['Title'][0]].count=1;
+		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0];
+		count[entry['Title'][0]].creator=entry['creator.Display'][0];
+		count[entry['Title'][0]].date=entry['Date.display'][0];
+		count[entry['Title'][0]].aat_style=entry['Date.stylePeriod'][0];
+
+		countlen++;
 	}
 
 })
 
-console.log('to edit', edit, edit.length); // so those are much less organized
+console.log('count', count, 'total number of sites: ', countlen, ', number to be corrected: ', edit.length, edit); // so those are much less organized
+
+fs.writeFileSync('../data/editInventory.csv', edit.join('\n\r'));
+//is not writing out the last 8 files after Uvedale Price...
+
+//console.log('to edit', edit, edit.length); // so those are much less organized
