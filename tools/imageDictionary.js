@@ -1,5 +1,7 @@
 const fs = require('fs');
 const { StringDecoder } = require('string_decoder');
+const http = require('http');
+const axios = require('axios');
 
 const decoder = new StringDecoder('utf8');
 const location = '../data/FLS_LocationsInventory.csv';
@@ -118,29 +120,95 @@ var countlen=0;
 const edit=[];
 
 rowObjs.forEach(entry=>{
-  if (entry['Title'][0] && (entry['Title'][0].includes(',') || entry['Title'][0].includes(')') || entry['Title'][0].includes(':'))){
-    if (edit.indexOf(entry['Title'][0])=== -1) { edit.push(entry['Title'][0])}
-  }
-
+  // if (entry['Title'][0] && (entry['Title'][0].includes(',') || entry['Title'][0].includes(')') || entry['Title'][0].includes(':'))){
+  //   if (edit.indexOf(entry['Title'][0])=== -1) { edit.push(entry['Title'][0])}
+  // }
 
 	if (count[entry['Title'][0]]){
 		count[entry['Title'][0]].count ++;
+		count[entry['Title'][0]].imageIds = count[entry['Title'][0]].imageIds.concat(entry['image.ID'][0]);
+
+		if (count[entry['Title'][0]].subsites.indexOf(entry['Title.object'][0])=== -1){
+			count[entry['Title'][0]].subsites = count[entry['Title'][0]].subsites.concat(entry['Title.object'][0]);
+		};
+		if (count[entry['Title'][0]].viewTypes.indexOf(entry['Title.imageView'][0]) === -1 ){
+			count[entry['Title'][0]].viewTypes = count[entry['Title'][0]].viewTypes.concat(entry['Title.imageView'][0])
+		}
+
+
 	} else {
-		count[entry['Title'][0]]={};
-		 count[entry['Title'][0]].count=1;
-		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0];
-		count[entry['Title'][0]].creator=entry['creator.Display'][0];
+		count[entry['Title'][0]]={}; // create
+
+		 count[entry['Title'][0]].count=1; //collect and update these elements
+		 count[entry['Title'][0]].subsites = [ entry['Title.object'][0]] ;
+		 count[entry['Title'][0]].viewTypes = [ entry['Title.imageView'][0] ] ;
+		 count[entry['Title'][0]].imageIds =  [ entry['image.ID'][0] ] ;
+
+		count[entry['Title'][0]].creators= entry['creator.Display']; // this will be an array
+		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0]; // no need to update, grab one
 		count[entry['Title'][0]].date=entry['Date.display'][0];
-		count[entry['Title'][0]].aat_style=entry['Date.stylePeriod'][0];
+		count[entry['Title'][0]].aat_style = entry['Date.stylePeriod']; // this will be an array
+		count[entry['Title'][0]].keywords = entry['keyword'];
 
 		countlen++;
 	}
 
 })
 
-console.log('count', count, 'total number of sites: ', countlen, ', number to be corrected: ', edit.length, edit); // so those are much less organized
+//console.log('count', count, 'total number of sites: ', countlen); // so those are much less organized
 
-fs.writeFileSync('../data/editInventory.csv', edit.join('\n\r'));
-//is not writing out the last 8 files after Uvedale Price...
+//loop through and run getty query to grab lat/long generally, add to object for the moment
 
-//console.log('to edit', edit, edit.length); // so those are much less organized
+//testing basic remote quests
+
+
+axios({
+  method:'get',
+  url:'http://vocab.getty.edu/tgn/1000080-geometry.json',
+})
+  .then(function(response) {
+  console.log('latitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/latitude'][0].value);
+  console.log('longitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/longitude'][0].value);
+});
+
+var nolocation=0;
+
+for (site in count){
+	siteObj = count[site];
+
+	if (siteObj.tng && !(isNaN(+siteObj.tng)) && siteObj.tng !== undefined){
+		var num = +siteObj.tng;
+		console.log(num);
+
+		axios({ //reset this to be a promise structure - after all are returned, then save out working files for quick visualization iteration. . .
+		  method:'get',
+		  url:'http://vocab.getty.edu/tgn/'+num+'-place.json',
+		})
+		  .then(function(response) {
+		  let key = Object.keys(response.data)[0];
+		  //console.log(response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#lat'][0].value, response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#long'][0].value);
+		  count[site].latitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#lat'][0].value;
+		  count[site].longitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#long'][0].value;
+
+
+		}).catch(err=>{
+			console.log(err.message);
+		});
+
+
+	} else {
+		count[site].latitude=null;
+		count[site].longitude = null;
+		nolocation ++;
+
+	}
+
+};
+
+console.log('count', count, 'total number of sites: ', countlen, 'without location: ', nolocation);
+
+//can I hit my box images without any issue? (look up their api tonight)
+//what about a simple 100+ image query to flickr? (easy sample, 100 closest pictures)
+
+//leaflet - pick a site, display BBR json data, grab flickr and other photos -
+
