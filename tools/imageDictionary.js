@@ -2,9 +2,10 @@ const fs = require('fs');
 const { StringDecoder } = require('string_decoder');
 const http = require('http');
 const axios = require('axios');
+const Promise = require("bluebird");
 
 const decoder = new StringDecoder('utf8');
-const location = '../data/FLS_LocationsInventory.csv';
+const location = '../data/FLS_LocationsInventoryStandardized.csv';
 
 const list = fs.readFileSync(location);
 const content = decoder.write(list).split('\n'); //read and break up csv into rows
@@ -115,7 +116,7 @@ const rowObjs=content.map(row=>{
 
 //1. simple count of unique sites
 
-const count={};
+const count=[];
 var countlen=0;
 const edit=[];
 
@@ -125,7 +126,7 @@ rowObjs.forEach(entry=>{
   // }
 
 	if (count[entry['Title'][0]]){
-		count[entry['Title'][0]].count ++;
+		count[entry['Title'][0]].imgCount ++;
 		count[entry['Title'][0]].imageIds = count[entry['Title'][0]].imageIds.concat(entry['image.ID'][0]);
 
 		if (count[entry['Title'][0]].subsites.indexOf(entry['Title.object'][0])=== -1){
@@ -139,16 +140,27 @@ rowObjs.forEach(entry=>{
 	} else {
 		count[entry['Title'][0]]={}; // create
 
-		 count[entry['Title'][0]].count=1; //collect and update these elements
+		count[entry['Title'][0]].siteName=entry['Title'][0];
+		 count[entry['Title'][0]].imgCount=1; //collect and update these elements
 		 count[entry['Title'][0]].subsites = [ entry['Title.object'][0]] ;
 		 count[entry['Title'][0]].viewTypes = [ entry['Title.imageView'][0] ] ;
 		 count[entry['Title'][0]].imageIds =  [ entry['image.ID'][0] ] ;
 
 		count[entry['Title'][0]].creators= entry['creator.Display']; // this will be an array
 		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0]; // no need to update, grab one
-		count[entry['Title'][0]].date=entry['Date.display'][0];
+		count[entry['Title'][0]].dates={
+			early: entry['Date.earliest'][0],
+			late: entry['Date.latest'][0],
+			display: entry['Date.display'][0],
+		};
 		count[entry['Title'][0]].aat_style = entry['Date.stylePeriod']; // this will be an array
 		count[entry['Title'][0]].keywords = entry['keyword'];
+		count[entry['Title'][0]].loc = {
+			type: entry['Location.type'][0],
+			country: entry['Location.country'][0],
+			state: entry['Location.state-province'][0],
+			city: entry['Location.city-county'][0],
+		}
 
 		countlen++;
 	}
@@ -162,53 +174,94 @@ rowObjs.forEach(entry=>{
 //testing basic remote quests
 
 
-axios({
-  method:'get',
-  url:'http://vocab.getty.edu/tgn/1000080-geometry.json',
-})
-  .then(function(response) {
-  console.log('latitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/latitude'][0].value);
-  console.log('longitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/longitude'][0].value);
-});
+// axios({
+//   method:'get',
+//   url:'http://vocab.getty.edu/tgn/1000080-geometry.json',
+// })
+//   .then(function(response) {
+//   console.log('latitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/latitude'][0].value);
+//   console.log('longitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/longitude'][0].value);
+// });
 
 var nolocation=0;
+var getty=[];
+var sited=[];
+var nonsited=[];
 
 for (site in count){
 	siteObj = count[site];
 
 	if (siteObj.tng && !(isNaN(+siteObj.tng)) && siteObj.tng !== undefined){
 		var num = +siteObj.tng;
-		console.log(num);
+		//console.log(num);
 
-		axios({ //reset this to be a promise structure - after all are returned, then save out working files for quick visualization iteration. . .
+		getty.push(axios({ //reset this to be a promise structure - after all are returned, then save out working files for quick visualization iteration. . .
 		  method:'get',
 		  url:'http://vocab.getty.edu/tgn/'+num+'-place.json',
-		})
-		  .then(function(response) {
-		  let key = Object.keys(response.data)[0];
-		  //console.log(response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#lat'][0].value, response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#long'][0].value);
-		  count[site].latitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#lat'][0].value;
-		  count[site].longitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#long'][0].value;
+		}));
 
-
-		}).catch(err=>{
-			console.log(err.message);
-		});
-
+		sited.push(siteObj);
 
 	} else {
-		count[site].latitude=null;
-		count[site].longitude = null;
+		count[site].tgn_latitude=null;
+		count[site].tgn_longitude = null;
 		nolocation ++;
+
+		nonsited.push(count[site]);
 
 	}
 
 };
 
-console.log('count', count, 'total number of sites: ', countlen, 'without location: ', nolocation);
+var siteTNG=[];
 
-//can I hit my box images without any issue? (look up their api tonight)
+	Promise.all(getty).then(function(responses) {
+
+			responses.forEach((response, i)=>{
+
+				  var key = Object.keys(response.data)[0];
+				  var id = key.replace('http://vocab.getty.edu/tgn/', '').replace('-place', '');
+
+				  var context = sited.filter(site=>{
+				  	return (+site.tng === +id && !site.tgn_latitude);
+				  })
+
+				  var con = context.map(site=>{
+
+				  	site.tgn_latitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#lat'][0].value;
+				  	site.tgn_longitude=response.data[key]['http://www.w3.org/2003/01/geo/wgs84_pos#long'][0].value;
+
+				  	return site;
+
+				  });
+
+				  siteTNG=siteTNG.concat(context);
+
+			})
+
+			return siteTNG;
+
+		}).then(siteTNG=>{
+
+			const fullArray = siteTNG.concat(nonsited);
+			const stringArray = JSON.stringify(fullArray);
+			console.log(stringArray);
+			//only turn on for updates//-----------------------------------------------
+			fs.writeFileSync('../data/sitesCondensed_.js', stringArray);
+
+
+
+
+
+		})
+
+	.catch(err=>{
+			console.log(err.message);
+		});
+
+
+//can I hit my box images without any issue? (look up their api tonight)---------- no and that sucks
+
 //what about a simple 100+ image query to flickr? (easy sample, 100 closest pictures)
-
 //leaflet - pick a site, display BBR json data, grab flickr and other photos -
 
