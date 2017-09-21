@@ -244,7 +244,10 @@ var siteTNG=[];
 		}).then(siteTNG=>{
 
 			const fullArray = siteTNG.concat(nonsited);
-			const stringArray = JSON.stringify(fullArray);
+			const sortArray = fullArray.sort(function(a, b) {
+			  return b.imgCount - a.imgCount;
+			})
+			const stringArray = JSON.stringify(sortArray);
 			console.log(stringArray);
 			//only turn on for updates//-----------------------------------------------
 			fs.writeFileSync('../data/sitesCondensed_.js', stringArray);

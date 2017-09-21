@@ -1,4 +1,4 @@
-const keyGoogle = ''; //need a new api key for processsing
+const keyGoogle = 'AIzaSyBnyLxFjPMPe7IgujfYk-yaWcUCr9R-V7s'; //need a new api key for processsing
 
 const fs = require('fs');
 const http = require('http');
@@ -6,6 +6,8 @@ const axios = require('axios');
 const Promise = require("bluebird");
 
 const sites = require('../data/sitesCondensed.js');
+
+const sitesSlice = sites.slice(400);
 
 // so compose google place search (name, country) and google city search (city, country)
 // retrieve lat/long for all so generic mapping/errors
@@ -26,14 +28,15 @@ const sites = require('../data/sitesCondensed.js');
 
 var place = [];
 
-// //------------------Testing for the initial site---------------------
-// // axios({
-// //         method: 'get',
-// //         url: 'https://maps.googleapis.com/maps/api/geocode/json?address=Belvedere,Vienna,Austria&key=' + keyGoogle,
-// //     })
-// //     .then(function(response) {
-// //         console.log(JSON.stringify(response.data));
-// //     });
+//------------------Testing for the initial site---------------------
+// axios({
+//         method: 'get',
+//         url: 'https://maps.googleapis.com/maps/api/geocode/json?address=Belvedere,Vienna,Austria&key=' + keyGoogle,
+//         name: 'Belvedere',
+//     })
+//     .then(function(response) {
+//         console.log(decodeURI(response.request.path));
+//     });
 
 // const tempResults = { "results":
 // 		[{ "address_components": [
@@ -66,45 +69,71 @@ var place = [];
 
 // console.log(testObj);
 
-function encode_utf8(s) {
-  return unescape(encodeURIComponent(s));
-}
 
-
-sites.forEach(site=>{
+sitesSlice.forEach(site=>{
 	//note I've done a find/replace for all non utf-8 characters as 'e'
+  var name, city, country;
+  (site.siteName !== undefined)? name = site.siteName : name = '';
+  (site.loc.city !== undefined)? city = site.loc.city : city = '';
+  (site.loc.country !== undefined)? country = site.loc.country : country = '';
 
-	var gPlace = site.siteName + ',' + site.loc.city + ',' + site.loc.country;
+
+	var gPlace = name + ',' + city + ',' + country;
 	var address = 'https://maps.googleapis.com/maps/api/geocode/json?address='+gPlace +'&key='+keyGoogle;
 	//console.log(address);
 
 	place.push(axios({
 		  		method:'get',
 		  		url: address,
-			}));
+			}).then(function(response) {
 
-			// .then(function(response) {
-			// 			if (response.data.status === 'OK'){
-			// 					site.g_address = response.data.results[0].formatted_address;
-			// 					site.g_latitude = response.data.results[0].geometry.location.lat;
-			// 					site.g_longitude = response.data.results[0].geometry.location.lng;
-			// 					site.g_id = response.data.results[0].place_id;
+				var path = decodeURI(response.request.path).replace('/maps/api/geocode/json?address=', '');
+				var name = path.replace('&key='+keyGoogle, '').split(',')[0];
 
-			// 			} else if (response.data.status === 'ZERO_RESULTS'){
-			// 				site.gPlace_result = response.data.status;
-			// 			};
 
-			// 			return site;
+
+				var obj = {};
+				obj.siteName = name;
+
+						if (response.data.status === 'OK'){
+								obj.g_address = response.data.results[0].formatted_address;
+								obj.g_latitude = response.data.results[0].geometry.location.lat;
+								obj.g_longitude = response.data.results[0].geometry.location.lng;
+								obj.g_id = response.data.results[0].place_id;
+
+						} else if (response.data.status === 'ZERO_RESULTS'){
+							obj.gPlace_result = response.data.status;
+						};
+
+						return obj;
   	// 			//add info here and then return site - which will become a new array... not everythin will geocode nicely.
-			// })
+			})
+			)
+
 
 })
 
 
 Promise.all(place)
 	.then(function(responses) {
+
 		responses.forEach(response=>{
-				console.log(response.data);
-		})
+
+        var name = response.siteName;
+
+        sitesSlice.forEach(site=>{
+          if (site.siteName === name){
+            site.g_address = response.g_address;
+            site.g_latitude = response.g_latitude;
+            site.g_longitude = response.g_longitude;
+            site.g_id = response.g_id;
+            site.gPlace_result = response.gPlace_result;
+
+          }
+        })
+    })
+				console.log(sitesSlice);
+        const stringArray = JSON.stringify(sitesSlice);
+        fs.writeFileSync('../data/sitesGoogle_.js', stringArray);
 	})
-	.catch(console.log);
+	//.catch(err=>{console.log(err.message)});
