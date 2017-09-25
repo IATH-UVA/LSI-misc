@@ -15,13 +15,30 @@ const condensed = sitesG.map(site=>{
 	name: site.siteName,
 	imageCount: site.imgCount,
 	views: site.viewTypes,
-	location: [site.g_latitude, site.g_longitude],
+	location_google: [site.g_latitude, site.g_longitude],
 	location_getty: [site.tgn_latitude, site.tgn_longitude]
 	}
 
 })
 
-console.log(condensed);
+
+const location = sitesG.map((site)=>{
+		if (site.g_latitude){
+			return site.siteName +';'+site.imgCount+';'+2;
+		} else if (site.tgn_latitude){
+			return site.siteName +';'+site.imgCount+';'+1;
+		} else {
+			return site.siteName +';'+site.imgCount+';'+0;
+		}
+	})
+
+
+
+const content = location.join(';\n');
+fs.writeFileSync('../data/namesNormalized.csv', content);
+
+
+console.log(location);
 
 
 // axios({
