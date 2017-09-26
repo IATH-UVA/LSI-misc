@@ -113,7 +113,28 @@ const rowObjs=content.map(row=>{
 
 //-------------------------------BASIC QUESTIONS AS CODE------------------------------
 
+var artists=[];
+var ulan =[];
 
+rowObjs.forEach(entry=>{
+	artists=artists.concat(entry['creator.Display']);
+	ulan = ulan.concat(entry['creator.NameSource']);	
+})
+
+var unqArtist = [];
+
+artists.forEach((creator, i)=>{
+	if (unqArtist.indexOf(creator) === -1){
+		unqArtist.push(creator);
+	}
+})
+
+console.log(unqArtist.length); //348
+
+const contents = unqArtist.sort().join(';\n');
+fs.writeFileSync('../data/agents.csv', contents);
+
+/*
 //1. simple count of unique sites
 
 const count=[];
@@ -250,7 +271,7 @@ var siteTNG=[];
 			const stringArray = JSON.stringify(sortArray);
 			console.log(stringArray);
 			//only turn on for updates//-----------------------------------------------
-			fs.writeFileSync('../data/sitesCondensed_.js', stringArray);
+			//fs.writeFileSync('../data/sitesCondensed_.js', stringArray);
 
 
 
@@ -261,7 +282,7 @@ var siteTNG=[];
 	.catch(err=>{
 			console.log(err.message);
 		});
-
+*/
 
 //can I hit my box images without any issue? (look up their api tonight)---------- no and that sucks
 
