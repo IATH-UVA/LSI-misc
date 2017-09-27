@@ -5,7 +5,7 @@ const axios = require('axios');
 const Promise = require("bluebird");
 
 const decoder = new StringDecoder('utf8');
-const location = '../data/FLS_LocationsInventoryStandardized.csv';
+const location = '../data/FLS_LocationsInventoryStandardized_MacAgents.csv';
 
 const list = fs.readFileSync(location);
 const content = decoder.write(list).split('\n'); //read and break up csv into rows
@@ -115,10 +115,16 @@ const rowObjs=content.map(row=>{
 
 var artists=[];
 var ulan =[];
+var agentId={};
 
 rowObjs.forEach(entry=>{
 	artists=artists.concat(entry['creator.Display']);
-	ulan = ulan.concat(entry['creator.NameSource']);	
+	ulan = ulan.concat(entry['creator.NameSource']);
+
+	for (var i=0; i<entry['creator.Display'].length; i++){
+		agentId[entry['creator.Display'][i]] = entry['creator.NameSource'][i];
+	}
+
 })
 
 var unqArtist = [];
@@ -129,10 +135,24 @@ artists.forEach((creator, i)=>{
 	}
 })
 
-console.log(unqArtist.length); //348
+unqArtist.sort();
+var artistAnno=[];
 
-const contents = unqArtist.sort().join(';\n');
-fs.writeFileSync('../data/agents.csv', contents);
+unqArtist.forEach(item=>{
+	let source = agentId[item];
+	artistAnno.push(item+';'+source);
+})
+
+console.log(unqArtist.length); //384 to 358 after cleaning
+console.log(artists.length, ulan.length, Object.keys(agentId).length);
+console.log(agentId);
+
+// const contents = unqArtist.sort().join(';\n');
+// fs.writeFileSync('../data/agents.csv', contents);
+	const contents = artistAnno.join(';\n');
+	fs.writeFileSync('../data/agentSource.csv', contents);
+
+//
 
 /*
 //1. simple count of unique sites
