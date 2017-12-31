@@ -5,7 +5,7 @@ const axios = require('axios');
 const Promise = require("bluebird");
 
 const decoder = new StringDecoder('utf8');
-const location = '../data/FLS_LocationsInventoryStandardized_MacAgents.csv';
+const location = '../data/FLS_LocationsInventoryUTF8_.csv';
 
 const list = fs.readFileSync(location);
 const content = decoder.write(list).split('\n'); //read and break up csv into rows
@@ -112,7 +112,7 @@ const rowObjs=content.map(row=>{
 */
 
 //-------------------------------BASIC QUESTIONS AS CODE------------------------------
-
+/*
 var artists=[];
 var ulan =[];
 var agentId={};
@@ -150,14 +150,14 @@ console.log(agentId);
 // const contents = unqArtist.sort().join(';\n');
 // fs.writeFileSync('../data/agents.csv', contents);
 	const contents = artistAnno.join(';\n');
-	fs.writeFileSync('../data/agentSource.csv', contents);
-
+	fs.writeFileSync('../data/agentSourceUTF8.csv', contents);
+*/
 //
 
-/*
-//1. simple count of unique sites
 
-const count=[];
+//1. simple count of unique core sites
+
+var count=[];
 var countlen=0;
 const edit=[];
 
@@ -168,14 +168,26 @@ rowObjs.forEach(entry=>{
 
 	if (count[entry['Title'][0]]){
 		count[entry['Title'][0]].imgCount ++;
-		count[entry['Title'][0]].imageIds = count[entry['Title'][0]].imageIds.concat(entry['image.ID'][0]);
+		count[entry['Title'][0]].images.push({id: entry['image.ID'][0], subsite: entry['Title.object'][0], viewType: entry['Title.imageView'][0] })
 
-		if (count[entry['Title'][0]].subsites.indexOf(entry['Title.object'][0])=== -1){
-			count[entry['Title'][0]].subsites = count[entry['Title'][0]].subsites.concat(entry['Title.object'][0]);
+		var artist = entry['creator.Display']
+		if (count[entry['Title'][0]].creators.indexOf(artist) === -1){
+			count[entry['Title'][0]].creators = count[entry['Title'][0]].creators.concat(artist);
 		};
-		if (count[entry['Title'][0]].viewTypes.indexOf(entry['Title.imageView'][0]) === -1 ){
-			count[entry['Title'][0]].viewTypes = count[entry['Title'][0]].viewTypes.concat(entry['Title.imageView'][0])
-		}
+
+		var subject = entry['keywords']
+		if (count[entry['Title'][0]].keywords.indexOf(subject) === -1){
+			count[entry['Title'][0]].keywords = count[entry['Title'][0]].keywords.concat(subject);
+		};
+
+		// count[entry['Title'][0]].imageIds = count[entry['Title'][0]].imageIds.concat(entry['image.ID'][0]);
+
+		// if (count[entry['Title'][0]].subsites.indexOf(entry['Title.object'][0])=== -1){
+		// 	count[entry['Title'][0]].subsites = count[entry['Title'][0]].subsites.concat(entry['Title.object'][0]);
+		// };
+		// if (count[entry['Title'][0]].viewTypes.indexOf(entry['Title.imageView'][0]) === -1 ){
+		// 	count[entry['Title'][0]].viewTypes = count[entry['Title'][0]].viewTypes.concat(entry['Title.imageView'][0])
+		// }
 
 
 	} else {
@@ -183,11 +195,13 @@ rowObjs.forEach(entry=>{
 
 		count[entry['Title'][0]].siteName=entry['Title'][0];
 		 count[entry['Title'][0]].imgCount=1; //collect and update these elements
-		 count[entry['Title'][0]].subsites = [ entry['Title.object'][0]] ;
-		 count[entry['Title'][0]].viewTypes = [ entry['Title.imageView'][0] ] ;
-		 count[entry['Title'][0]].imageIds =  [ entry['image.ID'][0] ] ;
+		 count[entry['Title'][0]].images =[{id: entry['image.ID'][0], subsite: entry['Title.object'][0], viewType: entry['Title.imageView'][0] }]
 
-		count[entry['Title'][0]].creators= entry['creator.Display']; // this will be an array
+		 // count[entry['Title'][0]].subsites = [ entry['Title.object'][0]] ;
+		 // count[entry['Title'][0]].viewTypes = [ entry['Title.imageView'][0] ] ;
+		 // count[entry['Title'][0]].imageIds =  [ entry['image.ID'][0] ] ;
+
+		count[entry['Title'][0]].creators = entry['creator.Display']; // this will be an array
 		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0]; // no need to update, grab one
 		count[entry['Title'][0]].dates={
 			early: entry['Date.earliest'][0],
@@ -196,19 +210,20 @@ rowObjs.forEach(entry=>{
 		};
 		count[entry['Title'][0]].aat_style = entry['Date.stylePeriod']; // this will be an array
 		count[entry['Title'][0]].keywords = entry['keyword'];
-		count[entry['Title'][0]].loc = {
+		count[entry['Title'][0]].location = {
 			type: entry['Location.type'][0],
 			country: entry['Location.country'][0],
 			state: entry['Location.state-province'][0],
 			city: entry['Location.city-county'][0],
 		}
+		// count[entry['Title'][0]].editor = [entry['Processor'][0]]
 
 		countlen++;
 	}
 
 })
 
-//console.log('count', count, 'total number of sites: ', countlen); // so those are much less organized
+console.log('count', count, 'total number of sites: ', countlen); // so those are much less organized
 
 //loop through and run getty query to grab lat/long generally, add to object for the moment
 
@@ -223,6 +238,8 @@ rowObjs.forEach(entry=>{
 //   console.log('latitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/latitude'][0].value);
 //   console.log('longitude: ', response.data['http://vocab.getty.edu/tgn/1000080-geometry']['http://schema.org/longitude'][0].value);
 // });
+
+
 
 var nolocation=0;
 var getty=[];
@@ -291,7 +308,7 @@ var siteTNG=[];
 			const stringArray = JSON.stringify(sortArray);
 			console.log(stringArray);
 			//only turn on for updates//-----------------------------------------------
-			//fs.writeFileSync('../data/sitesCondensed_.js', stringArray);
+			fs.writeFileSync('../data/sitesCondensedUTF8.js', 'var sitesUTF8='+stringArray+';\r module.exports=sitesUTF8');
 
 
 
@@ -302,7 +319,7 @@ var siteTNG=[];
 	.catch(err=>{
 			console.log(err.message);
 		});
-*/
+
 
 //can I hit my box images without any issue? (look up their api tonight)---------- no and that sucks
 
