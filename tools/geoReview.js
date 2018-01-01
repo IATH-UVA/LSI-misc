@@ -4,12 +4,14 @@ const http = require('http');
 const axios = require('axios');
 const Promise = require("bluebird");
 
-const site0 = require('../data/sitesGoogle_0-200.js');
-const site1 = require('../data/sitesGoogle_200-400.js');
-const site2 = require('../data/sitesGoogle_400.js');
+// const site0 = require('../data/sitesGoogle_0-200.js');
+// const site1 = require('../data/sitesGoogle_200-400.js');
+// const site2 = require('../data/sitesGoogle_400.js');
 
 
-var sites = site0.concat(...site1, ...site2);
+// var sites = site0.concat(...site1, ...site2);
+
+var sites = require('../data/sitesCondensedUTF8.js');
 
 var hex = { '°':'&#x00B0;',
   '½':'&#x00BD;',
@@ -66,23 +68,24 @@ const convertName = function(name){
 
 var cleaned = sites.map(site=>{
 
-	var creators = site.creators.reduce(function (allNames, name) {
-		  if (name in allNames) {
-		    allNames[name]++;
-		  }
-		  else {
-		    allNames[name] = 1;
-		  }
-		  return allNames;
-		}, {});
+	// var creators = site.creators.reduce(function (allNames, name) {
+	// 	  if (name in allNames) {
+	// 	    allNames[name]++;
+	// 	  }
+	// 	  else {
+	// 	    allNames[name] = 1;
+	// 	  }
+	// 	  return allNames;
+	// 	}, {});
 
 	return {
 		name: site.siteName,
 		nameVar: (site.siteName)? convertName(site.siteName) : null,
 		imageCount: site.imgCount,
 		images: site.images,
-		creators: creators,
-		creatorsVar: (Object.keys(creators))? Object.keys(creators).map(item=>convertName(item)): null,
+		creators: site.creators,
+		creatorsVar: (site.creators !== undefined)? site.creators.map(item=>(item)?convertName(item):null): null,
+		roles: site.creatorRoles,
 		location_google: [site.g_latitude, site.g_longitude],
 		g_id: site.g_id,
 		tng: site.tng,
@@ -121,16 +124,20 @@ siteList.sort()
 const nameList = [];
 
 cleaned.forEach(site=>{
-	if (Object.keys(site.creators)){
-		for (var author in site.creators){
-			var vars = convertName(author);
+	if (site.creators.length>0){
+		site.creators.forEach(author=>{
+			console.log(author);
+			if (author !== null){
 
-			if (vars !== author){
-				nameList.push(vars, author);
-			} else {
-				nameList.push(author);
+				var vars = convertName(author);
+
+				if (vars !== author){
+					nameList.push(vars, author);
+				} else {
+					nameList.push(author);
+				}
 			}
-		}
+		})
 	}
 })
 
@@ -168,8 +175,8 @@ var location = sites.map((site)=>{
 
 
 
-const content = location.join(';\n');
-fs.writeFileSync('../data/namesNormalized_.csv', content);
+// const content = location.join(';\n');
+// fs.writeFileSync('../data/namesNormalized_.csv', content);
 
 const siteVars = siteList.join(',\r');
 const nameVars = nL.join(',\r');
@@ -178,6 +185,6 @@ fs.writeFileSync('../data/nameList.csv', nameVars);
 
 
 const cleaner = JSON.stringify(cleaned);
-fs.writeFileSync('../data/sitesGoogleClean.js', 'var sites='+cleaner+';\r modules.export=sites');
+fs.writeFileSync('../data/sitesGoogleCleanNG.js', 'var sites='+cleaner+';\r module.exports=sites');
 
 console.log(siteList.length, nameList.length, location.length, google, tng, none);

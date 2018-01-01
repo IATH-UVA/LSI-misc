@@ -5,7 +5,7 @@ const axios = require('axios');
 const Promise = require("bluebird");
 
 const decoder = new StringDecoder('utf8');
-const location = '../data/FLS_LocationsInventoryUTF8_.csv';
+const location = '../data/FLS_LocationsInventoryUTF8_tab.csv'; /// use tab version for clean read
 
 const list = fs.readFileSync(location);
 const content = decoder.write(list).split('\n'); //read and break up csv into rows
@@ -16,7 +16,7 @@ const nameArr = [];
 const keys = [];
 
 var item = content.shift();
-var elements = item.split(';');
+var elements = item.split('\t');
 
 
 for (var i=0; i<elements.length; i++){
@@ -76,7 +76,7 @@ for (var i=0; i<elements.length; i++){
 
 //create json from rows
 const rowObjs=content.map(row=>{
-	let items= row.split(';');
+	let items= row.split('\t');
 	let newObj = {};
 
 	for (var i=0; i<56; i++){
@@ -171,23 +171,20 @@ rowObjs.forEach(entry=>{
 		count[entry['Title'][0]].images.push({id: entry['image.ID'][0], subsite: entry['Title.object'][0], viewType: entry['Title.imageView'][0] })
 
 		var artist = entry['creator.Display']
-		if (count[entry['Title'][0]].creators.indexOf(artist) === -1){
+		console.log(artist);
+		if (!count[entry['Title'][0]].creators.includes(...artist)){
 			count[entry['Title'][0]].creators = count[entry['Title'][0]].creators.concat(artist);
 		};
 
-		var subject = entry['keywords']
-		if (count[entry['Title'][0]].keywords.indexOf(subject) === -1){
-			count[entry['Title'][0]].keywords = count[entry['Title'][0]].keywords.concat(subject);
+		var roles = entry['creator.Role']
+		if (!count[entry['Title'][0]].creatorRoles.includes(...roles)){
+			count[entry['Title'][0]].creatorRoles = count[entry['Title'][0]].creatorRoles.concat(roles);
 		};
 
-		// count[entry['Title'][0]].imageIds = count[entry['Title'][0]].imageIds.concat(entry['image.ID'][0]);
-
-		// if (count[entry['Title'][0]].subsites.indexOf(entry['Title.object'][0])=== -1){
-		// 	count[entry['Title'][0]].subsites = count[entry['Title'][0]].subsites.concat(entry['Title.object'][0]);
-		// };
-		// if (count[entry['Title'][0]].viewTypes.indexOf(entry['Title.imageView'][0]) === -1 ){
-		// 	count[entry['Title'][0]].viewTypes = count[entry['Title'][0]].viewTypes.concat(entry['Title.imageView'][0])
-		// }
+		var subject = entry['keywords']
+		if (subject !== undefined && !count[entry['Title'][0]].keywords.includes(...subject)){
+			count[entry['Title'][0]].keywords = count[entry['Title'][0]].keywords.concat(subject);
+		};
 
 
 	} else {
@@ -200,8 +197,9 @@ rowObjs.forEach(entry=>{
 		 // count[entry['Title'][0]].subsites = [ entry['Title.object'][0]] ;
 		 // count[entry['Title'][0]].viewTypes = [ entry['Title.imageView'][0] ] ;
 		 // count[entry['Title'][0]].imageIds =  [ entry['image.ID'][0] ] ;
-
+		 console.log(entry['creator.Display']);
 		count[entry['Title'][0]].creators = entry['creator.Display']; // this will be an array
+		count[entry['Title'][0]].creatorRoles = entry['creator.Role']; // this will be an array
 		count[entry['Title'][0]].tng=entry['Location.ARTSTOR'][0]; // no need to update, grab one
 		count[entry['Title'][0]].dates={
 			early: entry['Date.earliest'][0],
@@ -223,7 +221,7 @@ rowObjs.forEach(entry=>{
 
 })
 
-console.log('count', count, 'total number of sites: ', countlen); // so those are much less organized
+//console.log('count', count, 'total number of sites: ', countlen); // so those are much less organized
 
 //loop through and run getty query to grab lat/long generally, add to object for the moment
 
@@ -306,7 +304,7 @@ var siteTNG=[];
 			  return b.imgCount - a.imgCount;
 			})
 			const stringArray = JSON.stringify(sortArray);
-			console.log(stringArray);
+			//console.log(stringArray);
 			//only turn on for updates//-----------------------------------------------
 			fs.writeFileSync('../data/sitesCondensedUTF8.js', 'var sitesUTF8='+stringArray+';\r module.exports=sitesUTF8');
 
