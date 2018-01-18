@@ -1,0 +1,1 @@
+var agentsUTF8Min_Old=[{"name":"Go-Mizunoo","ulan":"null","chp":"8"},{"name":"Johann Friedrich Eyserbeck","ulan":"","chp":"7"},{"name":"Prince Toshitada","ulan":"null","chp":"8"},{"name":"William Cullen Bryant","ulan":"","chp":"9"}]; module.exports=agentsUTF8Min_Old

@@ -10,9 +10,9 @@ const { StringDecoder } = require('string_decoder');
 var iconv = new Iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE');
 const decoder = new StringDecoder('ascii');
 
-const sitesUTF8 = require('../data/sitesCondensedUTF8.js');
+const sites = require('../data/compare/07sitesA_check.js');
 
-const sitesSlice = sitesUTF8.slice(400);
+const sitesSlice = sites.slice();
 
 // so compose google place search (name, country) and google city search (city, country)
 // retrieve lat/long for all so generic mapping/errors
@@ -78,16 +78,23 @@ console.log(testObj);
 
 sitesSlice.forEach((site, i)=>{
 	//note I've done a find/replace for all non utf-8 characters as 'e'
+  /*
   var name, city, country;
   (site.siteName !== undefined)? name = site.siteName : name = '';
   (site.location.city !== undefined)? city = site.location.city : city = '';
   (site.location.country !== undefined)? country = site.location.country : country = '';
+	*/
+
+	if (site.type==='site'){
 
 
-	var gPlace = name + ',' + city + ',' + country;
+
+	var gPlace = site.name[0];
 	var address = 'https://maps.googleapis.com/maps/api/geocode/json?address='+gPlace +'&key='+keyGoogle;
   var add2 = iconv.convert(address);
   const content = decoder.write(add2)
+
+  console.log(content);
 
 
 	place.push(axios({
@@ -96,9 +103,10 @@ sitesSlice.forEach((site, i)=>{
 
 			}).then(function(response) {
 
-				// var path = decodeURI(response.request.path).replace('/maps/api/geocode/json?address=', '');
-				// var name = path.replace('&key='+keyGoogle, '').split(',')[0];
+				var path = decodeURI(response.request.path).replace('/maps/api/geocode/json?address=', '');
+				var name = path.replace('&key='+keyGoogle, '').split(',')[0];
 
+				if (response.data.status === 'OK') {console.log(response.data.results[0].formatted_address, name)}
 
 
 				var obj = {};
@@ -119,6 +127,7 @@ sitesSlice.forEach((site, i)=>{
 			})
 			)
 
+	}
 
 })
 
@@ -131,7 +140,7 @@ Promise.all(place)
         var name = response.siteName;
 
         sitesSlice.forEach(site=>{
-          if (site.siteName === name){
+          if (site.name[0] === name){
             site.g_address = response.g_address;
             site.g_latitude = response.g_latitude;
             site.g_longitude = response.g_longitude;
@@ -143,7 +152,7 @@ Promise.all(place)
     })
 				//console.log(sitesSlice);
         const stringArray = JSON.stringify(sitesSlice);
-        fs.writeFileSync('../data/sitesGoogle_400.js', 'var site2='+stringArray+';\r module.exports=site2');
+        fs.writeFileSync('../data/compare/07sitesB.js', 'var sites='+stringArray+';\r module.exports=sites');
 	})
 	.catch(err=>{console.log(err.message)});
 

@@ -1,0 +1,796 @@
+sites	id	chapter	site_id	tgn_agent	tgn_id	name	ulan_id		dates	titles	title-dates	pgs	assoc	assoc sites
+	 	1		theorist		Jung, Carl	500320294							
+		1	01011,01016	patron	7022063,7002626	Nebuchadnezzar II, King of Babylonia	500276298							
+		1	1014	patron	7520935	Mentuhotep II	500125214							
+		1	1015	patron	7520935	Hatshepsut, Queen of Egypt	500372509							
+		1	1015	designer	7520935	Senemut								
+		1	1020	author	7228703	Vincent Scully								
+		1	1036	author	2067508	Rina Naranjo Swentzell								
+		2	02002,02005,02012,02017	patron, statesman	7233830,7226663,7000000	Pericles	500372674							
+		2	2008	designer, planner	7002386	Hippodamus	500257256							
+		2		theorist		Aristotle	500259120							
+		2		theorist		Xenophon	500328332							
+		2		patron		Alexander the Great	500280655							
+		2	2020	patron	7016140	Eumenes II	500353597							
+		2	2020	patron	7016140	Attalos II								
+		2	02028,02029	patron	7051533,7009760	Pliny the Younger	500293708							
+		2	2032	patron	7006709	Faustinus								
+		2	2033	patron	7006983	Hadrian	500022200							
+		3		author		Shah Tahmasp								
+		3		designer		Mir Sayyid Ali	500116662							
+		3	3002	author		Homer	500279109							
+		3		author		Hesiod								
+		3		author		Pindar								
+		3		author		Virgil	500337098							
+		3		administrator		Emperor Augustus	500058949							
+		3		author		Ovid	500246979							
+		3		author	 author	Blossius Aemilius Dracontius								
+		3		author	 author	Alcimus Ecdicius Avitus								
+		3		undefined	 undefined	Muhammad								
+		3		author	 author	Ruzbihan Baqli								
+		3		author	 author	Firdawsi								
+		3		theorist		Saint Bernard	500314286							
+		3		undefined		Virgin Mary								
+		3		undefined		Jesus Christ	500344051							
+		3		author		Thoreau	500229765							
+		3		theorist		Claudian								
+		3		theorist		Guillaume de Lorris	500058043							
+		3		theorist		Jean de Meung	500096016							
+		3		theorist		Giovanni Boccaccio	500314560							
+		3		author		Xenophon	500328332							
+		3	3008	administrator, patron		Cyrus the Great	500354805							
+		3	3010	administrator, patron		Alexander the Great	500280655							
+		3		 administrator		King Khosrow I Anushirvan								
+		3		 administrator		Genghis Khan								
+		3		 author		Ibn Rushd, Averros								
+		3	3019	 administrator, patron		Muhammad Ibn Ben Ahmar								
+		3	3017	 theorist		Abu Zakariya								
+		3	3022	 administrator, patron		Pedro the Cruel								
+		3	03023,03024	administrator		Ferdinand II King of Castile	500372577							
+		3	03023,03024	administrator		Isabella I Queen of Spain	50035498							
+		3	03023,03024	 administrator, patron		Yusuf I								
+		3	03023,03024	 administrator, patron		Muhammad V								
+		3	03023,03024	administrator		Emperor Charles V 	500231828							
+		3		 undefined		Solomon	500372725							
+		3	3025	 administrator, patron		Timur/Tamerlane								
+		3	03025,03026,03027,03028,03029	administrator, patron		Babur	500212753							
+		3	3032	 administrator, patron		Akbar								
+		3	03032,03033,03034,03035,03036	administrator, patron		Jahangir	500257015							
+		3	3037	administrator, patron		Shah Jahan	500245103							
+		3	3028	 administrator, patron		Humayun								
+		3	3028	 administrator, patron		Haji Begum								
+		3	3037	administrator		Mumtaz-i-Mahal	500353695							
+		3		administrator		Aurangzeb	500356884							
+		3	3043	administrator		Mehmed II	500253063							
+		3	3043	author		Sultan Suleyman	500126202							
+		3	3046	 administrator, patron		Shah Abbas								
+		3	03046,03053	 administrator, patron		Shah Husayn								
+		3		theorist		Thomas Aquinas	500330859							
+		3		author		Dante	500265888							
+		3		theorist		Piero de' Crescenzi	500274743							
+		3		 author		Cato the Elder								
+		3		 author		Marcus Terentius Varro								
+		3		 author		Lucius Columella								
+		3		author		Albertus Magnus	500330855							
+		3		designer		Renaud de Montauben								
+		3		designer		Master of Margaret of York	500013005							
+		3		theorist		Leone Battista Alberti	500002025							
+		3		designer		Fra Angelico	500029319							
+		4		author		Dante Alighieri 			(1265–1321)	The Divine Comedy		125		
+		4		author		Francesco Petrarca			1304–1374			125, 127, 128		
+		4		author		Nicolaus of Cusa			(1401–1464) 			125		
+		4		theorist		Nicolaus Copernicus			(1473–1543) 			125		
+		4		theorist		Galileo			(1564–1642)			125		
+		4		theorist		René Descartes			(1596–1650)			125		
+		4				Francesco Colonna			(1433–1527)	Hypnerotomachia Poliphili	1499	125, 131		
+		4				Leon Battista Alberti			(1404–1472)	De re aedificatoria	1452	125, 128		
+		4				Vitruvius						125		
+		4				Pliny the Younger						125		
+		4				Marcus Tullius Cicero			(106–43 b.c.e.)			127		
+		4				Virgil 			(70–19 b.c.e.).			127		
+		4				Plato			(c. 427–c. 347 b.c.e.)	Symposium, Phaedrus		127, 128		
+		4				Pliny the Elder			(23–79 c.e.)			127		
+		4		patron		Cosimo de’ Medici			(1389–1464)			127	Lorenzo the Magnificent	
+		4				Gemistos Plethon			(c. 1355–1450/55)			127		
+		4				Marsilio Ficino			(1433–1499)			127		
+		4				Plotinus						128		
+		4				Giovanni Pico della Mirandola 			(1463–1494)			128	Marsilio Ficino	
+		4		patron		Lorenzo the Magnificent			(1449–1492)			128	Cosimo de’ Medici, Leon Battista Alberti	
+		4		patron		Pope Nicholas V			 (papacy 1447–1455)			128, 133	Leon Battista Alberti	Belvedere
+		4		designer		Michelozzo di Bartolommeo			(1396–1472)			129	Cosimo de’ Medici, Giovanni Medici	Villa Medici at Fiesole
+		4		artist		Domenico del Ghirlandaio						129		Villa Medici at Fiesole
+		4		designer		Filippo Brunelleschi						130		
+		4		author		 Angelo Poliziano			(1454–1494)	“Rusticus”		130		
+		4		artist		Sandro Botticelli				Primavera	1482	130		
+		4		publisher		Aldus Manutius				Hypnerotomachia Poliphili	1499	131		
+		4		translator		Jean Martin				Hypnerotomachia Poliphili,  Discours du songe de Poliphile	1546	131		
+		4		designer		Donato Bramante			 (1444–1514)			133		Belvedere Court (papal), tempietto adjacent to San Pietro in Montorio
+		4		patron		Innocent VIII 			(papacy 1484–1492)			133		Belvedere Court (papal)
+		4		patron		Pope Julius II 			(papacy 1503–1513)			133		Belvedere Court (papal)
+		4		patron		Pope Julius III			(papacy 1550–1555)			134, 136		Belvedere Court (papal), Villa Guilia
+		4		designer		Michelangelo Buonarroti 			(1475–1564)			134, 136		Belvedere Court (papal), Villa Guilia
+		4		patron		 Pius IV 			(papacy 1559–1565)			134		Belvedere Court (papal)
+		4		designer		 Pirro Ligorio			(c. 1510–1583)			134, 138		Belvedere Court (papal), Villa Pia, Hadrian's Villa, Villa d'Este
+		4		patron		Pope Clement VII						135		Villa Madama
+		4		designer		Raphael (Raffaello Sanzio)			(1483–1520)			135		Villa Madama
+		4		designer		Giulio Romano 			(1492/9–1546)			135, 136		Villa Madama, Villa Giulia
+		4		designer		Antonio da Sangallo, the Younger 			(1485–1546)			135		Villa Madama
+		4		designer		Baldassare Peruzzi 			(1481–1536)			135		Villa Farnesina
+		4		patron		Leo X 			(papacy 1513–1521)			135		Villa Farnesina
+		4		artist		Giovanni da Udine 			(1487–1561/4)			135		Villa Farnesina, Villa Madama
+		4		designer		Parmigianino (Girolamo Francesco Mazzola)			 (1503–1540)			136		Villa Giulia
+		4		designer		Giorgio Vasari 			(1511–1574)			136		Villa Giulia
+		4		designer		Bartolommeo Ammannati 			(1511–1592)			136		Villa Giulia
+		4		designer		Barozzi da Vignola			(1507–1573)			136		Villa Giulia
+		4		patron		Ippolito D’Este			(1509–1572)			139	Pirro Ligorio 	Villa d'Este
+		4		poet		Marc-Antoine Muret			 (1526– 1585)			139		Villa d'Este
+		4		author		Montaigne			 (1533–1592)			139		Villa d'Este visitor
+		4		designer		Gianlorenzo Bernini 			(1598–1680)			140		Villa d'Este
+		4		patron		Cardinal Giovanni Francesco Gambar						142		Villa Lante
+		4		designer		Giacomo da Vignola						142		Villa Lante
+		5	05002,05003,05004,05005,050060	patron, administrator		Louis XIV	500122256							
+		5	05006,05023	administrator		Jean-Baptiste Colbert	500257321							
+		5		administrator		Cardinal Richelieu	500230194							
+		5		undetermined		Comedie-Francaise	500372515]							
+		5	5006	designer		Gianlorenzo Bernini	500032022							
+		5	5006	designer		Claude Perrault	500025641							
+		5	05006,05019	designer		Louis Le Vau	500028093							
+		5	05006,05019	designer		Charle Le Brun	500016215							
+		5		undetermined		Augustus	500058949							
+		5		undetermined		Hadrian	500022200							
+		5		patron, administrator		Henry IV	500122324							
+		5	05005,05006,05011,05012,05013,05014,05015,05016,05019,05021,05022,05023,05024	designer		André Le Nôtre	500027785							
+		5		patron		Catherine de Médicis	500241471							
+		5		theorist		René Descartes	500223252							
+		5		theorist		Galileo Galilei	500318087							
+		5		designer		William Kent	500021873							
+		5		designer		Francois Mansart	500031848							
+		5	05016,05017	designer		Jacques Lemercier	500024557							
+		5		designer		Jacques Boyceau	500103607							
+		5				Simon Vouet	500029258							
+		5	5019	administrator		Nicolas Fouquet	500317853							
+		5		Author, theorist		Girard Desargues	500106146							
+		5		administrator		Cardinal Mazarin	500354043							
+		5	5006	administrator		Charles Perrault	500070296							
+		5	05005,05006	designer		Jules Hardouin-Mansart	500029668							
+		5	5006	designer		Jean-Baptiste Tuby	500000922							
+		5	5006	author		Ovid	500246979							
+		5	5006	author		Madeleine de Scudery	500338297							
+		5	5006	author		Andre Felibien 	500100452							
+		5	5006	designer		Israel Silvestre	500021067							
+		5	5006	designer		Adam Perelle	500028468							
+		5	5006	designer		Antoine Le Pautre	500022516							
+		5	5006	designer		Claude Perrault	500025641							
+		5	5006	designer		Gerard van Opstal	500030105							
+		5	5006	patrom		Madame de Montespan								
+		5	5006	patron		Madame de Maintenon	500353795							
+		5	5006	gardener		Michel Le Bouteux	500085797							
+		5	5006	author		Aesop	500094170							
+		5	5005	designer		Sébastien Le Prestre de Vauban	500013669							
+		5	5006	gardener		Jean-Baptiste de la Quintinye	500098740							
+		5		designer		Jean-Honore Fragonard	500115329							
+		5		designer		Claude Desgots	500029365							
+		5		author, designer		Antoine-Joseph Dezallier d'Argenville	500202478							
+		5		designer		Dan Urban Kiley	500022580							
+		5		designer		Peter Walker	500027735							
+		5		administrator		Pope Clement VIII	500236251							
+		5	5028	administrator		Cardinal Pietro Aldobrandini	500360211							
+		5	5028	designer		Carlo Moderno	500007668							
+		5	5028	designer		Giovanni Fontana	500021566							
+		5	5030	administrator, patron		Cardinal Alessandro Farnese	500121936							
+		5	5030	designer		Antonio da Sangallo the younger	500017734							
+		5	05030,05031	designer		Giacomo Barozzi da Vignola	500024808							
+		5	05030,05031	designer		Girolamo Rainaldi	500009019							
+		5	5031	designer		Giacomo del Duca	500016281							
+		5	5032	administrator		Pope Paul III	500114692							
+		5	5032	administrator		Cardinal Odoardo Farnese	500354003							
+		5		administrator		Pope Paul V	500257409							
+		5	5034	administrator, patron		Cardinal Scipione Borghese	500245006							
+		5	5034	designer		Flaminio Ponzio								
+		5	5034	designer		Jan van Santen (Giovanni Vasanzio)	500006986							
+		5	5035	patron		Camillo Pamphili								
+		5		administrator		Pope Innocent X	500281685							
+		5	5035	patron		Olimpia Aldobrandini	500360206							
+		5	5044	patron		Garzoni family								
+		5	5044	designer		Ottaviano Diodati	500186432							
+		5	5045	patron		Gambarelli family								
+		5	5045	designer		Zanobi Lapi								
+		5	5045	patron		Capponi family	500315391							
+		5	5046	patron		Count Carlo Borromeo								
+		5	05007,05047	administrator, patron		Charles III	500122380							
+		5	5047	designer		Luigi Vanvitelli	500010755							
+Twickenham		7				Alexander Pope			1688-1744	An Epistle to Lord Burlington		232, 234, 236	Lord Burlington, Homer	
+		7				Isaac Newton			1642-1727			232		
+		7				Royal Society						232		
+		7				John Locke			1632-1704	Essay Concerning Human Understanding, Some Thoughts on the Conduct of the Understanding in the Search of Truth	1690, 1690	232		
+		7				Descartes						232		
+		7				Baron Ashley, first earl of Shaftesbury						233		
+		7				Jean-Jacques Rousseau			1712-1778	The Social Contract, Emile…, Julie…	1762, 1762, 1761	233, 261-265		
+Ermenonville		7				Louis-Rene, vicomte d'Ermenonvile, Marquis de Girardin				De la composition des paysages…	1777	233, 264		
+		7				Anthony Ashley Cooper, third earl of Shaftesbury			1671-1713			233		
+		7				Joseph Addison			1672-1719	The Spectator, The Tatler		233, 234	Virgil, Ripa	
+		7				Capability Brown						233		
+Monticello, The National Grid, University of Virginia, Louisana Purchase, Poplar Forest		7				Thomas Jefferson			1743-1826			233, 267-273	Palladio, Hugh Williamson	
+		7				Johann Wolfgang von Goethe			1749-1832	The Sorrows of Young Werther,  Faust, Elective Affinities	1774, xxxx, 1809	233, 273	Johann Gottfried von Herder, James Macpherson, Johann Winckelmann	
+Dove Cottage, Rhydal Mount, Coleorton Hall		7				Wordsworth				Lines Written a Few Miles above Tintern Abbey	1798	233, 277-279		
+		7				Nietzsche						233		
+		7				John Milton				Paradise Lost		233, 241		
+		7				Antoine-Joseph Dezalier d'Argenville			1680-1765	La theorie et la practique du jardinage	1712 ed.	234		
+		7				Matteo Ripa				engravings of Chinese landscapes	~1724	234	Lord Burlington	
+		7				Virgil				Aneaid, Georgics		234, 241		
+		7				Horace						234		
+Laurentinum, Tusci		7				Pliny the Younger						234, 241		
+Chiswick		7				Richard Boyle, third earl of Burlington			1695-1753			234, 235	Robert Castell, Palladio, John Rocque, William Kent	
+		7				Robert Castell				Villas of the Ancients	1728	235	Pliny the Younger	
+Villa Rotunda		7				Palladio				Four Books of Architecture		235	Thomas Jefferson	
+		7				John Rocque				engravings: Chiswick	1736	235		
+		7				Cesare Ripa				Iconologia: or Moral Emblems		235		
+		7				Claude Lorrain			1600-1682			235		
+		7				Nicolas Poussin			1594-1665			235		
+		7				Joseph Spence			1699-1768	Observations, Anecdotes, and Characters of Books and Men		236		
+		7				James Thomson			1700-1748	The Seasons, 'Rule Britannia'		236, 237, 241		
+Castle Howard		7				Stephen Switzer			1682-1745	The Nobleman, Gentleman, and Gardener's Recreation, Iconographia Rustica	1715, 1718 (1742)	237		
+		7				John Evelyn				Sylva		237		
+		7				Batty Langley			1696-1751	New Principles of Gardening	1728	237		
+		7				Thomas Whatley			xxxx-1772	Observations on Modern Gardening	1770	238		
+		7				Edmunde Burke			1729-1797	A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful	1757	238, 248		
+		7				William Hogarth			1697-1764	The Analysis of Beauty	1753	238, 248		
+		7				Horace Walpole			1717-1797	The History of the Modern Taste in Gardening	1780	238		
+Claremont, Stowe, Rousham		7				Charles Bridgeman			1680-1738			238	John Vanbrugh, William Kent, Thomas Pelham Holles, Richard Temple	
+Claremont, Stowe, Rousham [Florence, Genoa, Veneto, Tivoli, Frascati, Palestrina…Hadrian, etc.]		7				William Kent			1685-1748			238, 239, 240	Charles Bridgeman, John Vanbrugh,Thomas Pelham Holles, Richard Temple, Lord Burlington, Thomas Coke	
+		7				Society of Antiquaries			1718			239		
+Claremont, Castle Howard		7				John Vanbrugh			1664-1726			239	George London	
+Claremont		7				Thomas Pelham Holles						239	John Vanbrugh, Charles Bridgeman, William Kent	
+Stowe		7				Richard Temple, viscount of Cobham			1675-1749			240	Pope, Thomson, William Congreve, Charles Bridgeman, William Kent	
+		7				William Congreve			1670-1729			240		
+		7				Thomas Coke, earl of Leicester						240	William Kent	
+Kirkharle Hall, Kidington Hall, Stowe, Petworth, Broadlands, Blenheim, Hampton Court, Claremont		7				Lancelot 'Capability' Brown			1716-1783			240, 246-251	Sir William Loraine, Richard Temple, John Vanbrugh, Henry Wise	
+Rousham		7				Colonial Robert Dormer						240	Pope, Charles Bridgeman, William Kent	
+		7				Ovid						241		
+		7				Alberti				De Re aedification (english trans)	1726	241		
+Castle Howard		7				Charles Howard, third earle of Carlisle						241, 244	George London, Stephen Switzer, John Vanbrugh, Nicholar Hawksmoor	
+Castle Howard		7				George London						244	John Vanbrugh	
+Castle Howard		7				Nicholas Hawksmoor			1661-1736			244	John Vanbrugh	
+The Leasowes		7				William Shenstone			1714-1763	Works	1764	245	Thomas Jefferson	
+Woburn Farm		7				Philip Southcote			1698-1758			245		
+Studley Royal		7				John Aislabie						245		
+Painshill		7				Charles  Hamilton			1704-1786			245	Henry Hoare	
+		7				Henry Hoare						245	Charles Hamilton, Charles Howard, etc.	
+Stourhead		7				Henry Hoare II			1705-1785			245	Henry Hoare, Henry Flitcroft, Virgil, Poussin and Claude Lorrain, 	
+Stourhead		7				Henry Flitcroft			1697-1769			246		
+Stourhead		7				Richard Colt Hoare						246	Henry Hoare, Henry Hoare II, Linnean Society	
+		7				Linnean Society						246		
+Stowe		7				Richard Grenville						246	Richard Temple, viscount of Cobham	
+Kirkharle Hall		7				Sir William Loraine						248	Lancelot 'Capability' Brown	
+		7				John Constable						248		
+		7				John Mallord William Turner						248		
+Blenheim		7				Henry Wise						250	Lancelot 'Capability' Brown	
+Blenheim		7				Duke of Marlborough						250	Lancelot 'Capability' Brown, John Vanbrugh, Henry Wise	
+Kew, Claremont		7				William Chambers				A Dissertation on Oriental Gardening, Design of Chineses Buildings	1772, 1757	250, 251	Lancelot 'Capability' Brown, Princess of Wales +	
+Claremont		7				Lord Clive						251	Lancelot 'Capability' Brown, William Chambers	
+		7				Henry Holland			1745-1806			251		
+		7				William Mason				An Heroic Epistle to Sir William Chambers	1773	251	Lancelot 'Capability' Brown, William Chambers	
+		7				Jane Austen						251		
+Stowe, Lakes Disricct, Boldre, +		7				William Gilpin				Remarks on Forest Scenery, A Dialogue on upon the Garden of the Right Honourable Lord Viscount Cobham…, 	1791, 1748, 1786, +	252	Richard Temple, Horace Walpole	
+		7				William Sawrey Gilpin						253	William Gilpin	
+		7				Frederick Law Olmsted						253	William Gilpin	
+		7				Henry Thoreau						253	William Gilpin	
+		7				Oliver Wendall Holmes						253	William Gilpin	
+		7				Uvedale Price			1747-1829	On the Picturesque	1784	253, 254	Richard Payne Knight, Lancelot 'Capability' Brown, +	
+		7				Richard Payne Knight			1750-1824	The Landscape, a Didactic Poem	1794	253, 254	Pope, Uvedale Price, Lancelot 'Capability' Brown, +	
+Wentworth, Endsleigh, Cadogan Square, Russell Square, Sezincote, Brighton Pavilion, Crayford Workhouse		7				Humphrey Repton			1752-1818	Red Books, Sketches and Hints on Landscape Gardening, Theory and Practice of Landscape Gardening, Fragments on the Theory and Practice of Landscape Gardening, An Inquiry into the Changes of Taste in Landscape Gardening	xxxx, 1795, 1803, 1816, 1806	254, 255, 256, 258, 259, 260	Lancelot 'Capability' Brown, Richard Payne Knight, Uvedale Price, John Adey Repton, George Stanley Repton, John Nash	
+		7				Getrude Jekyll			1843-1932			256	Humphrey Repton's picturesque 'democratization'	
+Regent's Park		7				John Adey Repton			1775-1860			257		
+Regent's Park		7				George Stanley Repton			1786-1858			257		
+Regent's Park		7				John Nash			1752-1835			257		
+Bath [Queens Square, Gradn Parade, Circus]		7				John Wood the Elder			1704-1754			257		
+Bath [Royal Cresent]		7				John Wood the Younger			1728-1781			257		
+Bath [Lansdown Cresent]		7				John Palmer						257		
+Sezincote		7				Charles Cockerell						258	Humphrey Repton	
+Sezincote		7				Samuel Pepys Cockerell						258	Humphrey Repton	
+Muskau, Babelsburg, Klein Glienicke, Schloss Pfaueninsel		7				Hermann Ludwig Heinrich, prince of Puekler-Muskau			1785-1871			259, 260	Humphrey Repton, John Repton, Peter Joseph Lenne, Friedrich Schinkel	
+Sansoussi, Charlottenhof, Charlottenberg, Tiergarten, Magdenburg, Dresden, Frankfurt an der Oder, Babelsburg, Klein Glienicke, Schloss Pfaueninsel		7				Peter Joseph Lenne			1789-1866			260	Humphrey Repton, Friedrich Schinkel	
+Sansoussi, +		7				Friedrich Schinkel			1781-1841			260	Humphrey Repton, Peter Joseph Lenne	
+		7				William Makepeace Thackery				Vanity Fair	1848	260		
+		7				George Eliot				Middlemarch	1872	260		
+		7				Jean-Denis Attriet			1707-1768	Chinese Garden Description	1743	261		
+		7				Francois-de-Paule Latapie			1739-1823	Observations on Modern Gardening (fr. Trans)		261		
+		7				George-Louis Le Rouge				Details des nouveaux jardins a la mode: jardins anglo-chinois	1776-1787	261		
+Parc Monceau		7				Carmontelle (Louis Carrogis)			1717-1806			262		
+Parc Monceau		7				Louis-Philippe-Joseph (Philippe Egalite)			1747-1793			262	Carmontelle (Louis Carrogis)	
+		7				Fischer von Erlach				Entwurff einer historischen Architectur	1721	262		
+		7				Denis Diderot				Bijoux indiscrets	1748	263		
+Bois de Boulogne [Bois de Bagatelles]		7				Francois-Joseph Belanger			1744-1818			263		
+Bois de Boulogne [Bois de Bagatelles]		7				Thomas Blaikie			1717-1806			263		
+Bois de Boulogne [Bois de Bagatelles], Petit Trianon		7				Hubert Robert			1733-1808			263		
+		7				Jacob van Ruisdael			1628-1682			264		
+		7				Meindert Hobbema			1638-1709			264		
+Moulin Joli		7				Claude-Henri Watelet			1718-1786	Theorie des jardins	1776	264		
+Ermenonville		7				Jean-Marie Morel			1728-1810			264		
+Chantilly		7				Julien-David LeRoy						265	Prince de Conde	
+Chantilly		7				Prince de Conde						265	Julien-David LeRoy	
+Petit Trianon		7				Marie-Antoinette						265		
+Petit Trianon		7				Richard Mique			1728-1794			265		
+Desert de Retz		7				Francois Nicholas Henri Rancine, baron de Monville			1734-1797			266		
+		7				Jean-Honore Fragonard			1732-1806			266		
+The National Grid		7				Hugh Williamson						267		
+Louisiana Purchase		7				Meriweather Louis			1774-1809			268		
+Louisiana Purchase		7				William Clark			1770-1838			268		
+Jardin des Plantes		7				Andre Thouin						268	Thomas Jefferson	
+		7				Noailles de Tesse						268	Thomas Jefferson	
+Elgin Botanical Garden		7				Dr. David Hosack						268	Thomas Jefferson	
+		7				Bernard McMahon						268	Thomas Jefferson	
+		7				Robert Morris				Select Architecture		269	Thomas Jefferson	
+The Woodlands		7				William Hamilton						270	Thomas Jefferson	
+		7				Charles Willson Peale						270	Thomas Jefferson	
+		7				Wilhelm Gottlieb Becker				Neue Garten-und-Landschafts-Gedaude	1798	270	Thomas Jefferson	
+The U.S. Capital		7				William Thornton			1759-1828			272	Thomas Jefferson	
+Philadelphia Waterworks		7				Benjamin Henry Latrobe			1764-1820			272	Thomas Jefferson	
+		7				Johann Gottfried von Herder			1744-1803			273	Goethe	
+		7				Johann Winckelmann			1717-1768	Geshichte der Kunst des Altertums	1764	273	Goethe	
+Luisenkloster, Ilm 		7				Carl August, duke of Weimar						274	Goethe	
+Worlitz, Dessau		7				Prinz Franz of Anhalt-Dessau			1740-1817			274	Goethe	
+Worlitz, Dessau		7				Johann George Schoch			1758-1826			274		
+Worlitz, Dessau		7				Johann Friedrich Eyserbeck			1734-1818			274		
+		7				William Hamilton				Vesuvius publications		274	Johann George Schoch	
+		7				Johann George Sulzer				Enquiry into the Origin of Pleasant and Unpleasant Sensations	1752	275		
+		7				Henry Home, Lord Kames			1696-1782	Elements of Criticism		275		
+volksgarten' generally		7				Christian Lorenz Hirschfeld			1742-1792	Thoerie der Gartenkunst	1779-1785	275		
+		7				Richard Wagner						275		
+		7				Friedrich Schiller				An die Freude'	1785	275		
+		7				Ludwig van Beethoven 				Ninth Symphonie	1824	275		
+Englisher Garten		7				Friedrich Ludwig von Sckell			1750-1823			275	Benjamin Thompson	
+Englisher Garten		7				Benjamin Thompson			1753-1814			275	Friedrich Ludwig von Sckell	
+Englisher Garten		7				Karl Theodore						275	Friedrich Ludwig von Sckell,  Benjamin Thompson	
+		8	8001	patron	8687222	Qin Shihuangdi	null							
+		8	null	theorist, poet	null	Xie Lingyun	null							
+		8	null	theorist, poet	null	Tao Qian	null							
+		8	8002	theorist, poet, painter	8687222	Wang Wei	500327910							
+		8	8004	patron	7001845	Song Huizong	null							
+		8	8006	patron, designer	null	Zhu Mian	null							
+		8	null	theorist	null	Ji Cheng	500259781							
+		8	null	theorist, poet	null	Cao Xueqin	500338084							
+		8	8008	patron	7018059	Song Zongyuan	null							
+		8	8005	patron	8061551	Yongle	500356295							
+		8	08012,08013,08014,08015	patron	8697539,7001758	Emperor Qianlong	500372572							
+		8	8015	patron	7001758	Empress Cixi	null							
+		8	null	theorist	null	Tachibana no Toshitsuna	null							
+		8	8018	patron	7004603	Emperor Kammu	null							
+		8	8019	patron	1081654	Fujiwara Yorimichi	null							
+		8	08021,08022	patron, designer	7004603	Musō Soseki	500085405							
+		8	08023,08024	patron	7004603	Ashikaga Yoshimitsu	500127820							
+		8	8025	patron	7004603	Yoshimasa	null							
+		8	8026	patron, designer	7004603	Kogaku	500337248							
+		8	8026	designer, painter	7004603	Sōami	500121056							
+		8	8027	patron	7004603	Toyotomi Hideyoshi	500327127							
+		8	null	theorist	null	Sen no Rikyū	500325848							
+		8	8031	theorist, designer	7004603	Kobori Enshū	500236095							
+		8	8028	patron	1004832	Prince Toshihito	null							
+		8	8028	patron	1004832	Prince Toshitada	null							
+		8	08029,08030	patron	1004832	Go-Mizunoo	null							
+		9		author		Charles Darwin			(1809- 1882)	The Origin of Species	1859	311		
+		9		author		George Perkins Marsh			(1801- 1882)	Man and Nature	1864	311		
+		9		critic		John Ruskin			(1819-1900)			312, 319		
+		9		author		Ralph Waldo Emerson			(1803- 1882)			312		
+		9				Henry David Thoreau			(1817- 1862)			312		
+		9				Friedrich Nietzsche			(1844- 1900)			312		
+		9				Sigmund Freud			(1856- 1939)			312		
+		9				Jeremy Bentham			(1748- 1832)			313		
+		9				James Mill			(1773- 1836)			313		
+		9				John Claudius Loudon			(1782- 1843)	"Observations
+on Landscape Gardening, Gardener's Magazine, Register of Rural and Domestic Improvement, Encyclopaedia
+of Gardening… see 318 for publications list"	1804, 1822	313, 315, 316, 317, 318, 319, 321	editor of Repton in 1840	
+		9				Andrew Jackson Downing			(1815- 1852)	Treatise on the Theory and Practice of Landscape…, The Horticulturist	1841, 1844	313, 325, 326-329	"Loudon, Repton, Whately,
+Price, and Gilpin"	
+		9				Edwin Budding				lawn mower patent	1830	313		
+		9				Pierre-Joseph Redoute			 (1759- 1841)			314		
+		9				Francis Bauer			(1758-1840)			314		
+		9				Ferdinand Bauer 			(1760-1826)			314		
+		9				James Sowerby			(1757-1822)			314		
+		9				Frederick Law Olmsted			(1822- 1903)			314		
+		9				Calvert Vaux			(1824- 1895)			314, 329	Andrew Jackson Downing, Frederick Law Olmsted	
+		9		administrator, horticulturalist		Sir Joseph Banks			(1743- 1820)	Royal Society, Endeavour voyage		315		
+		9		naturalist		Allan Cunningham				Kew Excursions		315	Sir Joseph Banks	
+		9		naturalist		James Bowie				Kew Excursions		315	Sir Joseph Banks	
+		9		doctor, naturalist		Nathaniel Ward			(1791- 1868)	On the Growth of Plants in Closely Glazed Cases	1842	315		
+		9		society		Horticultural Society (of London)			1804			315		
+		9		administrator, horticulturalist		William Townsend Aiton			(1766- 1849)	Hortus Kewensis	1789	315	Sir Joseph Banks	
+		9		botanist		Daniel Solander				Hortus Kewensis		315	Sir Joseph Banks, Linnaeus	
+		9		engraver		Jonas Dryander				Hortus Kewensis		315	Sir Joseph Banks, Linnaeus	
+		9				William Jackson Hooker 			(1785- 1865)			316		
+		9				James Sowerby						316		
+		9				General George Frederick Stratton						316	John Claudius Loudon	
+		9				Thomas Andrew Knight 			(1759-1838)	greenhouses		317		
+		9				Joseph Paxton			(1801-1865)			317, 321, 322		
+		9				Decimus Burton			(1800- 1881)			317		
+		9				Richard Turner						317		
+		9				Joseph Strutt						318	John Claudius Loudon	
+		9				Jane Webb			 (1807-1858)	"Arboretum et Fruticetum Britannicum, Gardening for Ladies, My Own Garden; or The Young Gardener's Year
+Book"	1840s, 1855	319	John Claudius Loudon	
+		9				William Barron 			(1801-1891)	tree transplating/gafting		320		
+		9				Alexander Forbes						320		
+		9				William Andrews Nesfield			(1793- 1881)	parterres		320	Decimus Burton	
+		9		parton		Duke of Devonshire						322	Joseph Paxton	
+		9		developers		Yates family						322	Joseph Paxton	
+		9				Liverpool Improvement Commission			1842-1847			323	Joseph Paxton	
+		9				James Pennethorne						323		
+		9				John Gibson						323		
+		9		botanist		Thomas Nuttall			 (1786- 1859)	Genera of North American Plants	1818	325		
+		9		botanist		David Douglas 			(1798- 1834)	Douglas Fir, Vancouver		325	William Jackson Hooker 	
+		9				John Bartram, William Bartram						325	David Douglas 	
+		9				Bartram's Nurseries						325		
+		9				David Hosack						325		
+		9				Francois Andre Michaux			(1770-1855)			326		
+		9				Andre Parmentier			(1780-1830)	New England Farmer article		326	David Hosack	
+		9				Alexis de Tocqueville 			(1805- 1859)	Democracy in America	1831, 1840	326		
+		9				Luther Tucker				The Horticulturist	1846	329	Andrew Jackson Downing	
+		9				Matthew Vassar						329	Andrew Jackson Downing	
+		9				Robert Mills 			(1781-1855)			331		
+		9				Henry Dearborn						331		
+		9				Massachusetts Horticultural Society						332	Henry Dearborn +	
+		9		preservationist		Antoine-Chrysostome Quatremere de Quincy						333		
+		9				National Institute of Sciences and Arts, Paris				call for burial ideas	1796	333		
+		9				Arnaury Duval				extra mural burial - in advance of 1801 legislation		333	National Institute of Sciences and Arts, Paris	
+		9				Alexandre Theodore Brongniart						333		
+		9		reformer		James Hillhouse						334		
+		9		reformer		Dr. Jacob Bigelow						334		
+		9		mayor		Josiah Quincy						334		
+		9		poet		William Cullen Bryant			(1794-1878)	Thanatopsis	1817	334		
+		9		patron		George Watson Brimmer						334		
+		10		Author, theorist		Emerson, Ralph Waldo	500246883							
+		10		Author, theorist		Goethe, Johann Wolfgang von	500014761							
+		10		Author, theorist		Nietzsche, Friedrich Wilhelm	500222156							
+		10		Author, theorist		Baudelaire, Charles	500046443							
+		10		Author, theorist		Kant, Immanuel	500107055							
+		10		Author, theorist		Rousseau, Jean-Jacques	500250225							
+		10	10027	Designer	7013962	L'Enfant, Pierre	500014867							
+		10	10028	Designer	7013596	Burnham, Daniel								
+		10		Theorists, school		École des Beaux-Artes								
+		10	10001, 10005, 10016, 10017, 10018, 10019	Theorist, designer, administrator	7008038, 4012764, 7013288, 7656949	Haussman, Georges-Éugene	500009390							
+		10		Theorist, patron		Jefferson, Thomas	500017255							
+		10		Theorist		Proust, Marcel	500247117							
+		10	10001	Patron	7008038	Napoleon III (Bonaparte, Louis-Napoléan) 	500248237							
+		10	10007	Designer	7008038	Garnier, Jean-Louis-Charles	500017182							
+		10		Patron		Empress Eugénie								
+		10	10001	Painter	7008038	Béraud, Jean	500013652							
+		10	10001	Painter	7008038	Caillebotte, Gustave	500011706							
+		10	10001, 10009, 10010, 10011,10012	Patron	7008038	Napoleon I ( Bonaparte ,Napoléon)	500122388							
+		10	10010	Designer	7008038	Percier, Charles	500012660							
+		10	10010	Designer	7008038	Fontaine, Pierre-François-Léonard	500016389							
+		10	10014	Patron	7008038	Louis-Philippe	500236304							
+		10	10001	Engineer	7008038	Belgrand, Eugéne								
+		10	10005, 10016, 10017, 10018, 10019, 10021, 10022	Designer	7008038, 4012764, 7013288, 7656949	Alphand, Jean-Charles-Adolphe	500024000							
+		10	10005	Designer	7008038	Hittorff, Jakob Ignaz (Jaques-Ignace)	500013921							
+		10		Author, critic		Robinson, William	500015843							
+		10	10023	Designer	7008038	Davioud, Gabriel-Jean-Antoine	500018424							
+		10	10025, 10026	Designer	7008038	Eiffel, Gustave	500000800							
+		10	10026	Painter	7008038	Delaunay, Robert	500023463							
+		10		Theorist		Robinson, Charles Mulford	500088384							
+		10	10029, 10030, 10034	Designer	7013962, 7015727, 7015727, 1103049	Olmsted, Frederick Law, Jr.	500003659							
+		10	10029, 10030, 10034	Designer, design group	7013962, 7015727, 1103049	McMillan Commision, Senate Park Commision								
+		10	10029, 10030	Administrator, senator	7013962, 7015727, 1103049	McMillan, James								
+		10	10029, 10030, 10034	Designer	7013962, 7015727, 1103050	White, Stanford	500002702							
+		10	10029, 10030, 10035	Designer, sculptor	7013962, 7015727, 1103051	Saint-Gaudens, Augustus	500124332							
+		10	10029, 10030, 10036	Designer	7013962, 7015727, 1103052	McKim, Charles	null							
+		10	10035	Designer, theorist	7017627	Olmsted, Frederick Law, Sr.	5000015125							
+		10	10029	Administrator	7013962	Moore, Charles								
+		10	10029, 10035, 10036	Patron	7013962, 7017627, 7017631	Roosevelt, Theodore	500329597							
+		10	10029	Patron	7013962	Taft, William Howard								
+		10		Administrator		Council on Fine Arts								
+		10	10031	Designer	7013962	Bacon, Henry	500029359							
+		10	10031	Sculptor	7013962	French, Daniel Chester	500009434							
+		10	10033	Designer	7013962	Pope, John Russell	500126218							
+		10		Author		James, Henry	500280063							
+		10	10035	Photographer	7017627	Watkins, Carleton E.	500002731							
+		10	10035	Author	7017627	Ruskin, John	500006262							
+		10	10035	Patron	7017627	Lincoln, Abraham	500344436							
+		10	10035	Geologist	7017627	King, Clarence								
+		10	10035	Painter	7017627	Bierstadt, Albert	500001248							
+		10	10035, 10036	Theorist, naturalist	7017627, 7017631	Muir, John	500224954							
+		10		Author		Wordsworth, William	500071872							
+		10	10036	Administrator	7017631	Hayden, Ferdinand V.								
+		10	10036	Photographer	7017631	Jackson, William Henry	500030913							
+		10	10036	Painter	7017631	Moran, Thomas	500015257							
+		10	10035, 10036		7017627, 7017631	Mather, Stephen								
+		10	10035, 10036	Administrator	7017627, 7017631	Lane, Franklin K.								
+		10	10035, 10036	Administrator	7017627, 7017631	Albright, Horace M.								
+		10	10035, 10036	Patron	7017627, 7017631	Wilson, Woodrow								
+		10	10035, 10036	Administrator	7017627, 7017631	National Parks Service								
+		11	11001	designer	1102873	Paxton, Joseph	500032820							
+		11	null	theorist	null	Ruskin, John	500006262							
+		11	null	theorist	null	Morris, William	500030629							
+		11	null	gardener	null	Robinson, William	500015843							
+		11	11003, 11004	designer	7011743,7443707	Jekyll, Gertrude	500012954							
+		11	null	designer	null	Blomfield, Reginald	500028646							
+		11	null	author	null	Greenaway, Kate	500030743							
+		11	11021, 11028, 11029, 11030, 11031, 11032, 11033, 11034	designer	7016268,1008230	Farrand, Beatrix Jones	500014379							
+		11	11035, 11036	designer	7014145,7013625	Shipman, Ellen Biddle	500067425							
+		11	null	designer	null	Mawson, Thomas Hayton	500003449							
+		11	null	administrator	null	Haussmann, Baron	500009390							
+		11	11002	administrator	7003321	Franz Joseph I, Emperor of Austria (Austrian emperor, 1830-1916)	500339089							
+		11	null	author	null	Sitte, Camillo	500004464							
+		11	null	theorist	null	Wagner, Richard	500223295							
+		11	null	designer	null	Olmsted, Frederick Law	500015125							
+		11	null	designer	null	Wagner, Otto	500016971							
+		11	null	gardener	null	Loudon, John Claudius	500019060							
+		11	null	designer	null	Nesfield, William Andrews	500031491							
+		11	null	designer	null	Wren, Christopher	500115492							
+		11	11003, 11004, 11005	designer	7011743,7443707	Lutyens, Edwin	500008276							
+		11	11001	administrator	1102873	Jones, Owen	500019483							
+		11	null	theorist	null	Monet, Claude	500019484							
+		11	null	designer	null	Duchêne, Henri	500014831							
+		11	11006	designer	7017210	Duchêne, Achille	500004232							
+		11	11007	patron	1100391	Ninth Duke of Marlborough	null							
+		11	11009	patron	7008324	Carvallo, Joachim	500034571							
+		11	11009	designer	7008324	Du Cerceau, Jacques Androuet, the elder	500008202							
+		11	11010, 11011, 11012	designer	7598190, 1100349, 1102965	Forestier, Jean-Claude-Nicholas	500241611							
+		11	null	designer	null	Burnham, Daniel	null							
+		11	11013, 11014, 11015		7894596,7011215,7011223	Peto, Harold Ainsworth	500020604							
+		11	11020, 11022		7000874,7013458	Platt, Charles	500402881							
+		11	null		null	James, Henry	500280063							
+		11	null		null	Berenson, Bernard	500121389							
+		11	null		null	Gardner, Isabella Stewart	500210433							
+		11	11016, 11017, 11018		7000457,7000874	Pinsent, Cecil Ross	500075040							
+		11	11016		7000457	Acton, Arthur	500060532							
+		11	11017		7000874	Cutting, Sybil	null							
+		11	11019		7006345	Origo, Iris	null							
+		11	null		null	Triggs, H. Inigo	500247975							
+		11	null		null	Sitwell, George Reresby	null							
+		11	11021		7016268	Wharton, Edith	500205484							
+		11	null		null	Parrish, Maxfield	500004193							
+		11	11022		7013458	Sprague, Charles	null							
+		11	11022		7013458	Sprague, Mary Pratt	null							
+		11	null		null	Arnold, Matthew	null							
+		11	null		null	Marx, Karl	500234949							
+		11	null		null	Wolesly, Frances Garnet	null							
+		11	null		null	"Maynard, Frances Elelyn ""Daisy"""	null							
+		11	11023	designer, patron	7011944	Lindsay, Norah	500099548							
+		11	11024		4005011	Johnston, Lawrence	null							
+		11	11025		7447292	Sackville-West, Vita	500004079							
+		11	11025		7447292	Nicholson, Harold	null							
+		11	11026, 11027		7456218/7462011	Astor, William Waldorf	500313616							
+		11	null		null	Sargent, Charles Sprague	null							
+		11	null		null	Penelope Hobhouse	500250061							
+		11	null		null	Rosemary Veery	null							
+		11	null		null	Ware, William	null							
+		11	11029		7015827	Lorillard, Pierre	500225624							
+		11	11029		7015827	Garrison, William	null							
+		11	11030		2089611	Newbold, Clement	null							
+		11	11031		2016766	Stokes, Anson Phelps	null							
+		11	null		null	Morgan, J.P.	500322851							
+		11	11034		1101364	Rockefeller, John D.	500248124							
+		11	null		null	Roosevelt, Theodore	500329597							
+		11	11032		7015724	Bliss, Mildred	null							
+		11	11032		7015724	Bliss, Robert Wood	null							
+		11	11033		2045554	Rockefeller, Abby Aldrich	null							
+		11	11035		7014145	Hewitt, Mattie Edwards	null							
+		11	11037		7014461	Hertrich, William	null							
+		11	null		null	Jackson, Helen Hunt	null							
+		11	11038		7013386	Maybeck, Bernard	500008240							
+		11	11039, 11040		1112771,7014642	Greene, Sumner Charles	500010315							
+		11	11040		7014642	Bella Fleishacker	null							
+		11	11040		7014642	Mortimer Fleishacker	null							
+		11	11041		7014642	Polk, Willis	500026389							
+		11	11041		7014642	Bourn, William Bowers II	null							
+		11	11041		7014642	Porter, Bruce	500242597							
+		11	11041		7014642	Worn, Isabella	null							
+		11	11042		7014466	Hearst, William Randolph	500213593							
+		11	11042		7014466	Morgan, Julia	500025571							
+		11	11042		7014466	Adams, Charles Gibbs	500069852							
+		11	11043		7014455	Goodhue, Bertram Grosvenor	500031933							
+		11	null		null	Gill, Irving	500020397							
+		11	11044		7013418	Hanson, A.E.	500070054							
+		11	11044		7013418	Lloyd, Harold	null							
+		11	11044		7013418	Bell, Billy	null							
+		11	11044		7013418	Spaulding, Sumner	null							
+		11	11045, 11047		7017752,7014094	Smith, George Washington	500075726							
+		11	11045		7017752	Steedman, George Fox	null							
+		11	11045		7017752	Stevens, Ralph	500071371							
+		11	11045		7017752	deForest, Lockwood	500258764							
+		11	11046, 11047		2010932,7014094	Yoch, Florence	500098606							
+		11	11046		2010932	Council, Lucille	null							
+		11	11047		7014094	Stewart, Mary	null							
+		11	11048		7014044	Deering, James	500062111							
+		11	11048		7014044	Hoffman, F. Burral Jr.	null							
+		11	11048		7014044	Chalfin, Paul	500012287							
+		11	11016, 11048		7000457,7014044	Suarez, Diego	500110624							
+		11	null			Flagler, Henry Morrison	500259690							
+		11	11049		7017752	Mizner, Addison	500005344							
+		11	11042		7014466	Ecole des Beaux-Arts								
+		12	null	theorist	null	Marx, Karl	500234949							
+		12	null	theorist	null	George, Henry	null							
+		12	12004,12005	theorist	7011887,7011872	Howard, Ebenezer	500017754							
+		12	null	theorist	null	Veblen, Thorstein	null							
+		12	null	theorist	null	Kropotkin, Peter	null							
+		12	null	theorist	null	Shaw, George Bernard	null							
+		12	null	theorist	null	Addams, Jane	500255570							
+		12	null	theorist	null	Engels, Friedrich	500108438							
+		12	12001	patron	7010449	Salt, Sir Titus	500325394							
+		12	12002,12004	patron	7465094,7011887	Cadbury, George	500249740							
+		12	12002	patron	7465094	Cadbury, Richard	500294508							
+		12	12003,12004	patron	7010598,7011887	Lever, William Hesketh, 1st Viscount Leverhulme	500014545							
+		12	12004	designer	7011887	Parker, Barry	500018474							
+		12	12004, 12006	designer	7011887	Unwin, Raymond	500004674							
+		12	null	theorist	null	Sitte, Camillo	500004464							
+		12	null	theorist	null	Wagner, Otto	500016971							
+		12	null	theorist	null	Haussmann, Georges Eugène	500009390							
+		12	12007	designer	null	Garnier, Tony	500011266							
+		12	12008	designer	7007426	Cerdà, Ildefonso	500013516							
+		12	12009	designer	500035210	Soria y Mata, Arturo	500035210							
+		12	12010	designer	7007426	Güell, Eusebi, Baron	500318900							
+		12	12010	designer	7007426	Gaudí, Antoni	500014514							
+		12	null	designer	null	Sant'Elia, Antonio	500010939							
+		12	null	theorist	null	Hoffmann, Josef	500019177							
+		12	null	theorist	null	Moser, Koloman	500030689							
+		12	null	theorist	null	Behrens, Peter	500022843							
+		12	null	theorist	null	Morris, William	500030629							
+		12	null	theorist	null	Gropius, Walter	500028112							
+		12	null	theorist	null	Velde, Henry van de	500002737							
+		12	12011,12012	designer	null	Le Corbusier	500027041							
+		12	12012	designer	null	Costa, Lúcio	500033205							
+		12	12012	designer	null	Neimeyer, Oscar	null							
+		12	12014,12018	designer	7015820,7022658	Olmsted, Frederick Law Jr,	500003659							
+		12	12015,12016	designer	7022659,7014157	Wright, Henry	500020215							
+		12	12013,12015	designer	7013531	Ackerman, Frederick Lee	500021025							
+		12	12013	author	7013531	Perry, Clarence	null							
+		12	12014	designer	7015820	Atterbury, Grosvener	500053770							
+		12	12015,12016	theorist	7022659,7014157	Mumford, Lewis	500288833							
+		12	null	theorist	null	Geddes, Patrick	500029489							
+		12	12015,12016	theorist	null	Whitaker, Charles Harris	500243833							
+		12	null	theorist	null	MacKaye, Benton	500225254							
+		12	12015,12016	patron	7022659,7014157	Bing, Alexander	500064139							
+		12	12015,12016	designer	7022659,7014157	Stein, Clarence S.	500007317							
+		12	12015	designer	7022659	Cautley, Marjorie Sewell	500227373							
+		12	12017	designer	null	Lloyd Wright, Frank	500020307							
+		12	12014	patron	7015820	Norton, Charles Dyer	null							
+		12	null	designer	null	Adams, Thomas	500076502							
+		12	12018	designer	7022658	Merkel, Hermann W.	null							
+		12	12018	designer	7022658	Holleran, Leslie G.	null							
+		12	12018,12019,12020	designer	7022658	Clarke, Gilmore D.	null							
+		12	12018,12019,12020	designer	7022658	Downer, Jay	null							
+		12	12022	designer/administrator		Moses, Robert	500012860							
+		12	null	administrator	null	Mather, Stephen	null							
+		12	null	author	null	Cranz, Galen	500263645							
+		12	12023,12024,12025,12026	designer	,7014254,2026961	Jens Jensen	500021884							
+		12	null	theorist	null	McHarg, Ian	500080573							
+		12	12025	author	7014254	Caldwell, Alfred	500055214							
+		12	12027	designer	7022659	Harrison & Fouilhoux	null							
+		12	12027,12028,12029	patron	7022659	McAneny, George	null							
+		12	12027,12028,12029	patron	7022659	Whelan, Grover	null							
+		12	12027,12028,12029	patron	7022659	Straus, Percy	null							
+		12	12028	designer	7022659	Dreyfuss, Henry	500059346							
+		12	12029	designer	7022659	Geddes, Norman Bel	500024541							
+		12	null	theorist	null	Jacobs, Jane	500106696							
+		13	null	designer, author	null	Le Corbusier	500027041							
+		13	null	null	null	Harvard Graduate School of Design	500307206							
+		13	null	designer, administrator	null	Walter Gropius	500028112							
+		13	null	administrator	null	Robert Moses	500012860							
+		13	null	designer	null	Georg Kolbe	500004921							
+		13	13004	designer	7007426	Ludwig Mies van der Rohe	500006293							
+		13	null	designer	null	Jacques Lipchitz	500015743							
+		13	null	designer	null	Henry Moore	500032596							
+		13	null	designer	null	Jean-Claude Nicolas Forestier	500241611							
+		13	13001,13002,13005,13006,13007	designer	7008038,7023841	Gabriel Guévrékian	500088223							
+		13	13001,13005,13006,13007,13008	patron	7008038,7023841	Charles de Noailles	500256129							
+		13	13001,13005,13006,13007,13008	patron	7008038,7023841	Marie-Laure de Noailles	500128002							
+		13	13006,13007	designer	7023841	Robert Mallet-Stevens	500023949							
+		13	13001,13008	designer	7008038	André Vera	500226047							
+		13	13001,13008	designer	7008038	Paul Vera	500226048							
+		13	13001,13008	designer	7008038	Jean-Charles Moreau								
+		13	13011	designer, author	7014544	Fletcher Steele	500005358							
+		13	13066,13068,13069,13070	designer	7007157,2010017,2014315	Thomas Church	500004389							
+		13	null	designer	null	Frederick Law Olmsted, Jr.	500003659							
+		13	null	designer	null	Warren Henry Manning	500023760							
+		13	null	designer	null	Ralph Adams Cram	500023185							
+		13	null	designer	null	 André Le Nôtre	500027785							
+		13	null	designer	null	Tony Garnier	500011266							
+		13	13066,13067,13072,13073,13074	designer	7007157,2012661,2096004	Garrett Eckbo	500106344							
+		13	13081	designer	2066019	James Rose	500093875							
+		13	13076	designer	7013644	Daniel Urban Kiley	500022580							
+		13	13011	patron	7014544	Mabel Choate	500046093							
+		13	13012,13013	designer	7015706,7015827	Nathan Barrett								
+		13	13011	designer	7014544	Frederick MacMonnies	500031496							
+		13	13011	author	7014544	Robin Karson								
+		13	13019,13020	patron	2070555	Walter Beck								
+		13	13019,13020	patron	2070555	Marion Burt Stone Beck								
+		13	13020	author	2070555	William Butler Yeats	500019359							
+		13	13019,13020	designer	2070555	Lester Collins	500068024							
+		13	null	designer	null	Wang Wei	500327910							
+		13	13024	designer	1030029	Henry Hoare	500083962							
+		13	13025	adminstrator, patron	7004603	Go-Mizunoo								
+		13	13028,13029,13030	designer, author	4004750,7011730	Christopher Tunnard	500229958							
+		13	null		null	Modern Architectural Research Group (MARS)								
+		13	null		null	Congres Internationaux d'Architecture Moderne (CIAM)								
+		13	null	designer, author	null	Adolf Loos	500023721							
+		13	13026,13027	designer	2090809,2155549	Frank Lloyd Wright	500020307							
+		13	null	author	null	Virgil	500337098							
+		13	null	author, theorist	null	Uvedale Price	500104016							
+		13	null	author, theorist	null	Richard Payne Knight	500103219							
+		13	null	designer	null	Gordon Cullen	500102089							
+		13	13028,13029	designer	4004750	Serge Chermayeff	500011342							
+		13	13031,13032,13033,13034,13035,13036,13037,13038,13039,13040,13041,13042,13043,13044,13045,13046,13047	designer	1000047,7005443,7017095,1004211,1136572,7017121,7018798,7005845	Roberto Burle Marx	500015587							
+		13	13032	administator,patron	7005443	Lima Cavalcanti								
+		13	null	designer, author	null	Capability Brown	500013810							
+		13	null	designer	null	Jean Arp	500031000							
+		13	null	designer	null	Joan Miró	500014094							
+		13	null	designer	null	Alexander Calder	500007824							
+		13	null	designer	null	Lúcio Costa	500033205							
+		13	13034	designer	7005443	Cândido Portinari	500022426							
+		13	13034,13045,13046,13047	designer	7005443,7005845	Oscar Niemeyer	500007310							
+		13	null	designer	null	Reginald Blomfield	500028646							
+		13	13035,13036	designer	7017095	Wladimir Alves Souza								
+		13	13035,13036		7017095	Henrique Llahmeyer de Mello Barreto								
+		13	13040	designer	1136572	Rino Levi	500058340							
+		13	13040	patron	1136572	Olivio Gomes								
+		13	13054,13055,13056,13057,13058,13059	designer	7005560,7007227,1005699,8711831	Luis Barragán	500009714							
+		13	13051,13052	designer	7632306,7009337	Ferdinand Bac	500008259							
+		13	13057,13058,13059	designer	8711831	Max Cetto	500078993							
+		13	13062,13063	designer	2012983	Richard Neutra	500017837							
+		13	null	designer	null	Mark Rothko	500014869							
+		13	null	author	null	David Streatfield								
+		13	null	undefined	null	George Cukor								
+		13	null	designer	null	Florence Yoch	500098606							
+		13	null	designer	null	Alvar Aalto	500002617							
+		13	13068	designer	2010017	Hervey Parke Clark	500062875							
+		13	null	administrator	null	Joseph Hudnut	500256553							
+		13	null	author	null	Henry Hubbard								
+		13	null	author	null	Theodora Kimball								
+		13	null	author	null	Reuben Rainey								
+		13	null	author	null	Marc Treib	500063752							
+		13	null	designer	null	Wassily Kandinsky	500021093							
+		13	null	designer	null	Kasimir Malevich	500004959							
+		13	null	designer	null	László Moholy-Nagy	500004274							
+		13	null	designer, author	null	Ian McHarg	500080573							
+		13	13076	patron	7013644	Irwin Miller	500205013							
+		13	13076	designer	7013644	Eero Saarinen	500006141							
+		13	null	designer	null	Gregg Bleam								
+		13	null	designer, author	null	Lawrence Halprin	500008598							
+		13	null	designer	null	Louis Kahn 	500027669							
+		13	13078,13079,13080	designer	7013503	I.M. Pei	500029268							
+		13	null	designer	null	Kevin Roche	500032415							
+		13	null	designer, author	null	James Rouse								
+		14	null	author	null	Waldie, D.J.	null							
+		14	null	designer	null	Perry, Clarence	500274211							
+		14	14002,14003	designer	2070198,2066525	Levitt, Alfred	null							
+		14	null	designer	null	Eichler, Joseph	500089491							
+		14	null	designer	null	Anshen, Robert	null							
+		14	null	theorist	null	Wright, Gwendolyn	500228405							
+		14	14002	author	2070198	Gan, Herbert	null							
+		14	14004	patron	7013820	Nichols, J.C.	500231002							
+		14	14006	patron	7013503	Prather, Hugh 	null							
+		14	14009	designer	2054351	Gruen,Victor 	500066687							
+		14	14014,14015,14016	patron	7013445,7022657,7013352	Rouse, James	null							
+		14	14001	designer,patron	7013297	Disney, Walt	500025598							
+		14	14001	designer	7013297	Ryman,Herbert Dickens	null							
+		14	14001	designer	7013297	Goff, Harper 	null							
+		14	14001	designer	7013297	Evans, Morgan Bill 	null							
+		14	null	theorist	null	Ruskin, John	500006262							
+		14	null	theorist	null	Yeats, William Butler 	500019359							
+		16	null	theorist	null	Charles Darwin	500228559							
+		16	null	theorist	null	Charles Lyell								
+		16	null	theorist	null	Albert Einstein	500240971							
+		16	null	theorist	null	Rene Descartes	500223252							
+		16	null	theorist	null	Friedrich Nietzsche	500222156							
+		16	null	theorist	null	Sigmund Freud	500233677							
+		16	null	theorist	null	Carl Jung								
+		16	null	theorist	null	Edmund Husserl								
+		16	null	theorist	null	Martin Heidegger	500282302							
+		16	null	author	null	Sam Bass Warner, Jr.	500286024							
+		16	null	theorist	null	Maurice Merleau-Ponty	500222642							
+		16	null	theorist	null	Gaston Bachelard	500313717							
+		16	null	theorist	null	Michel Foucault	500240445							
+		16	null	author	null	John Dixon Hunt								
+		16	null	author	null	Edward Casey								
+		16	null	administrator	null	Thomas Jefferson	500017255							
+		16	null	designer, author	null	Frederick Law Olmsted	500015125							
+		16	null	designer, author	null	Benton MacKaye								
+		16	null	designer, author	null	Lawrence Halprin	500008598							
+		16	null	designer, author	null	Jane Jacobs	500106696							
+		16	null	author	null	Paul Vidal de la Blance								
+		16	null	author	null	Pierre Defontaines								
+		16	null	author	null	William G. Hoskins								
+		16	null	author	null	John Brinckerhoff Jackson	500231066							
+		16	null	author	null	Patrick Geddes	500029489							
+		16	null	designer, author	null	Garrett Eckbo	500106344							
+		16	null	author	null	Jean-Jacques Rousseau	500250225							
+		16	null	author	null	Henry David Thoreau	500229765							

@@ -7,9 +7,9 @@ const { StringDecoder } = require('string_decoder');
 const decoder = new StringDecoder('utf8');
 const location = '../data/compare/images_siteListupdated.csv'; /// use tab version for clean read
 
-const agents = require('../data/compare/07agentsB_non.js');
+const sites = require('../data/compare/07sitesA.js');
 
-var content = agents.slice(0);
+var content = sites.slice(0);
 
 /*
 const list = fs.readFileSync(location);
@@ -64,7 +64,7 @@ var endpoint = new SparqlHttp({endpointUrl: 'http://vocab.getty.edu/sparql'})
 var namesChecked = [];
 
 content.forEach(person=>{
-	//if (person.ulan==="" && person.chp){
+	if (person.type==="site"){
 		var name = person.name[0];
 	// the SPARQL query itself
 		var query = `select * where { ?Subject a skos:Concept; rdfs:label "${name}"; gvp:prefLabelGVP [xl:literalForm ?Term]}`
@@ -87,7 +87,7 @@ content.forEach(person=>{
 		  if (result.results.bindings.length>0){
 
 		  	var found = result.results.bindings.map(entry=>{
-		  		return entry['Subject'].value.replace('http://vocab.getty.edu/ulan/','')
+		  		return entry['Subject'].value.replace('http://vocab.getty.edu/tng/','')
 		  	})
 
 		  } else {
@@ -95,7 +95,7 @@ content.forEach(person=>{
 		  }
 
 
-		  person.ulan = found.join(', ');
+		  person.tng = found.join(', ');
 		  console.log(person, found);
 		  /*
 		  namesChecked.sort((a,b)=>{
@@ -110,7 +110,7 @@ content.forEach(person=>{
 
 		  console.log(content.length);
 			//only turn on for updates//-----------------------------------------------
-			fs.writeFileSync('../data/compare/07agentsB_nonUlan.js', 'var agents='+JSON.stringify(content)+';\r module.exports=agents');
+			fs.writeFileSync('../data/compare/07sitesA_check.js', 'var sites='+JSON.stringify(content)+';\r module.exports=sites');
 
 		// necessary catch the error
 		}).catch(function (err) {
@@ -119,7 +119,7 @@ content.forEach(person=>{
 
 		})
 
-	//}
+	}
 
 })
 

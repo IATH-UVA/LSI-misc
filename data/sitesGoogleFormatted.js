@@ -50,7 +50,7 @@ const sitesG = [{
 	"g_longitude": -81.563874,
 	"g_id": "ChIJ96XKNOZ-3YgRoPEc0B85Hqc"
 }, {
-	"siteName": "Parc Andre Citroen",
+	"siteName": "Parc André Citroën",
 	"imgCount": 89,
 	"subsites": [null, "Plan"],
 	"viewTypes": ["general view", "plan (drawing)"],

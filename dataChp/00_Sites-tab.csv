@@ -1,0 +1,652 @@
+start	id	chapter	site	method_type	descr_length	tgn_type	tgn_id	dates_bbr	pages_bbr	img_pages_bbr	figures	assoc	other
+	1001	1	caves at Lascaux	Survey	1	exact	1103287	null	29		*Overall Jungian Slant		
+	1002	1	Cosquer Cave	Survey	2	exact	7032200	null	29				
+	1003	1	Chauvet Cave	Survey	2	exact	7032610	30000 B.C.E	29	29			
+	1004	1	Canyon de Chelly	Survey	1	exact	2234241	null	29				
+	1005	1	cave in Laura area, Australia	Survey	1	adjRegion	7804136	null	29				
+	1006	1	Menhirs	Survey	2	adjTown	7017225	2000-1000 B.C.E	30	30			
+	1007	1	Stonehenge	Survey	3	exact	7011211	2750-1500 B.C.E	30,31	31			
+	1008	1	Woodhenge	Survey	2	adjRegion	1100728	1050	32,33	32			
+	1009	1	Newark Earthworks	Survey	3	adjTown	2080951	100 B.C.E-400 C.E.	33	33			
+	1010	1	Nanna Ziggurat	Survey	1	adjTown	7002485	2100-2050 B.C.E.	35	35			
+	1011	1	Pyramids of Giza	Survey	3	exact	7022063	2601-2515 B.C.E	35,36,40	36			
+	1012	1	Galaganatha temple	Survey	1	adjTown	1075433	7000-8000	37	37			
+	1013	1	Hanging Gardens of Babylon (site unknown)	Survey	2	null	null	604-562 B.C.E	39,40				
+	1014	1	Temple of Mentuhotep II	Survey	2	exact	7520935	2009-1997 B.C.E	40	40			
+	1015	1	Temple of Queen Hatshepsut	Survey	3	exact	7520935	1478-1458 B.C.E.	40,41	40			
+	1016	1	Ishtar Gate	Survey	1	adjTown	7002626	null	41				
+	1017	1	Obelisk, Abusir, Egypt	Survey	1	adjTown	7520356	null	41				
+	1018	1	Temple at Luxor	Survey	1	adjTown	7521655	1390-1212 B.C.E.	42	42			
+	1019	1	Obelisk of Tuthmose III	Marxist	3	null	null	1479-1425 B.C.E.	42				
+	1020	1	Labyrinth at Knossos, Crete, Greece	Survey	3	adjTown	7228703	2000-1470 B.C.E.	45	45			
+	1021	1	Central Court, Phaistos, Crete, Greece	Survey	1	adjTown	7010788	2000-1470 B.C.E.	45	45			
+	1022	1	Lioness Gate, Mycenae, Greece	Survey	1	adjTown	7012050	1300-1200 B.C.E.	46	46			
+	1023	1	Pyramid of the Sun at Teotihuacán	Survey	2	adjTown	7007218	150-225	47	47			
+	1024	1	Taos Pueblo	Survey	2	exact	2067594	1200-present	48	48			
+	1025	1	Earthworks at Poverty Point, Louisiana	Survey	1	adjRegion	2596414	1800-500 B.C.E.	48				
+	1026	1	Hopewell Mounds, Ohio	Survey	1	exact	2398880	100 B.C.E-400 C.E.	48				
+	1027	1	Monks Mound, Cahokia, Illinois	Survey	1	exact	1102194	800-1350	48	49			
+	1028	1	Watson Brake, Louisiana	Survey	2	exact	2753869	3000 B.C.E.	49	49			
+	1029	1	Ruins at Mesa Verde	Survey	2	exact	7017636	1100-1300	49	49			
+	1030	1	Pueblo Bonito at Chaco Canyon	Survey	3	exact	6004853	400-500,1100-1300	50,51	50			
+	1031	1	Casa Rinconada at Chaco Canyon	Survey	3	adjTown	7017645	860-1130	50,51				
+	1032	1	Altiplano of Lake Titicaca	Survey	3	adjRegion	1118418	860-1130	52,53	52			
+	1033	1	Ritual lines, Nazca, Peru	Survey	3	adjTown	7033105	200 B.C.E.-600C.E.	53,54	53			
+	1034	1	Great Serpent Mound, Ohio	Survey	1	exact	2652752	1100-1140 	54	54			
+	1035	1	Great Bear Mound, Effigy Mounds National Monument	Survey	1	adjTown	7029323	350 B.C.E-1300 C.E.	55	55			
+	1036	1	Santa Clara Pueblo	Survey	3	exact	2067508	null	55	56			
+	2001	2	Athens	Survey	3	exact	7001393		59,61,67,68,69,71,72,73,74,75,78,79	72,73,78			
+	2002	2	Acropolis	Survey	2	exact	7233830	480 B.C.E.	61,67	62			
+	2003	2	Delphi	Survey	3	adjTown	7010770	5th-4th centuries B.C.E.	61,62,63	63,64,65			
+	2004	2	Epidaurus	Survey	3	adjTown	7011116		56	56			
+	2005	2	Parthenon	Survey	2	exact	7226663	480 B.C.E.	67				
+	2006	2	Argive Heraion	Survey	1	exact	5001993	420-410 B.C.E.	68	68			
+	2007	2	the Academy	Survey	1	adjTown	7001393		68,71				
+	2008	2	Miletus	Survey	2	exact	7002386		69,76	69,76			
+	2009	2	Mohenjo-Daro	Survey	1	exact	7916176		70				
+	2010	2	Harappa	Survey	1	exact	8039784		70				
+	2011	2	Agora	Formal	4	exact	5004159	7th century B.C.E.	71,72,73,78,79	72,73,78			
+	2012	2	Theater of Dionysus	Survey	2	adjTown	7001393	6th century B.C.E.	71,74				
+	2013	2	Stoa Poikile	Survey	2	adjTown	7001393	5th century B.C.E.	71				
+	2014	2	Panathenaic Way	Survey	1	adjTown	7001393		71				
+	2015	2	Temple of Hephaistos	Survey	1	adjTown	7001393	3rd century B.C.E.	73	73			
+	2016	2	Monument of the Eponymous Heroes	Formal	2	adjTown	7001393						
+	2017	2	Odeion	Survey	1	adjTown	7001393	5th century B.C.E.	74,78				
+	2018	2	Kerameikos Cemetery	Formal	3	adjTown	5004243	12th century B.C.E.	74				
+	2019	2	Curetes Street, Ephesus, Turkey	Survey	1	adjTown	7002499		76	76			
+	2020	2	Pergamum	Formal	4	adjTown	7016140	2nd century B.C.E.	76,77	77			
+	2021	2	Nymphaeum	Survey	2	adjTown	7001393	2nd century B.C.E.	78,79				
+	2022	2	Florentia/Florence	Survey	2	exact	7000457		79	79			
+	2023	2	Sanctuary of Fortuna Primigenia	Formal	3	adjTown	7007001	2nd century B.C.E.	80,81	80			
+	2024	2	Pompeii	Survey	3	exact	7004658		83,85	83,85			
+	2025	2	Herculaneum	Survey	3	exact	7031897		83,85	83			
+	2026	2	House of Octavius Quartio	Formal	4	adjTown	7004658	3rd century B.C.E.	84,85	84			
+	2027	2	Villa Boscoreale	Survey	1	adjTown	7004658	1st century B.C.C	86	86			
+	2028	2	Laurentinum	Biographical	3	adjRegion	7051533	1st century B.C.C	87				
+	2029	2	Tusci	Biographical	3	adjRegion	7009760	1st century B.C.C	87,88				
+	2030	2	Villa Poppaea at Oplontis	Survey	3	adjTown	7008405	1st century B.C.C	88,89	88,89			
+	2031	2	Villa of the Papyri	Survey	2	adjTown	7008405		89				
+	2032	2	Grotto of Tiberius at Sperlonga	Formal	3	adjTown	7006709	1st century B.C.C	89,90	90			
+	2033	2	Hadrian's Villa	Formal, Iconographic	4	exact	7006983	2nd century B.C.E.	90,91,92,93,94,95	92,93,95			
+	3001	3	Eden	formal, psychoanalytic	2	null			98				
+	3002	3	Elysian Fields	survey, psychoanalytic	1	null			98				
+	3003	3	Rhadamanthos	survey	1	null			99				
+	3004	3	Elysion	survey	1	null			99				
+	3005	3	Blessed Isles	survey	1	null			99				
+	3006	3	Okeanos	survey	1	null			99				
+	3007	3	Villa Palmieri	survey	1	adjTown	7000457		102				
+	3008	3	Sardis	survey	1	exact	7002615		104				
+	3009	3	Pasrgadae	survey, formal, political	2	exact	6004566		104				
+	3010	3	Ctesiphon	survey, politica	2	exact	6001610	240-226 B.C.	104				
+	3011	3	Baghdad	survey, politica	2	exact	7002482	766 B.C., 1258	104				
+	3012	3	Tigris River	survey	1	exact	1130850		104				
+	3013	3	House of the Tree	formal	1	null			104				
+	3014	3	Damascus	survey	1	exact	7002261	750 B.C.	104				
+	3015	3	Andalusia	survey, politica	1	exact	7024275	750 B.C.	104				
+	3016	3	Cordoba	survey, politica	3	exact	7002817	750 B.C.	104, 105,118,121				
+	3017	3	Seville	survey, politica	2	exact	7008676		105				
+	3018	3	Guadalaquivir	survey	1	null			105				
+	3019	3	Granada	survey, politica	3	exact	7002821		105	105			
+	3020	3	Rome	survey, politica	2	exact	7000874		105				
+	3021	3	Great Mosque at Cordoba	formal	2	adjTown	7002817	785-786	105	105			
+	3022	3	Alcazar	formal	2	adjTown	7345366	1348	105	106			
+	3023	3	Alhambra	formal, phenomenological, material culture, political	3	adjTown	7002821	1238-1500	106	106			
+	3024	3	Generalife	formal, phenomenological, political	3	adjTown	7002821	1319	106, 107, 108	107			
+	3025	3	Samarkand	survey, formal, political	3	exact	7012290		108				
+	3026	3	Kabul	survey, politica	3	exact	7002278		108, 109				
+	3027	3	Herat	survey, politica	1	exact	7002243	1506	108				
+	3028	3	Agra	survey, politica	3	exact	7001493	1526	108, 109, 112				
+	3029	3	Jalalabad	survey, politica	1	exact	1065441		108				
+	3030	3	Bagh-i-Vafa Garden of Fidelity	formal, phenomenological, psychoanalytic	1	adjTown	7002278		108	109			
+	3031	3	Himalayas	survey	1	exact	7016919		108, 109				
+	3032	3	Kashmir	formal, political	3	exact	7000799		110				
+	3033	3	Shalamar	formal, phenomenological, psychoanalytic	3	exact	7979053	1619	110111	110111			
+	3034	3	Achbal	formal, political	1	adjTown	1074433		111				
+	3035	3	Nishat Bagh	formal	1	adjTown	1140224	1600-1625	111	111			
+	3036	3	Vernag	formal	1	exact	7581775		111				
+	3037	3	Taj Mahal	formal	2	exact	7581615	1632	112, 113	112113			
+	3038	3	Red Fort	survey	1	adjTown	7001493		112				
+	3039	3	Constantinople	survey	2	exact	7002473	1453	114, 118				
+	3040	3	Istanbul	survey	1	exact	7002473		114				
+	3041	3	Bosporus	survey	2	exact	1115068		114115				
+	3042	3	Sea of Marmara	survey	1	exact	1112293		114				
+	3043	3	Topkapi Saray	formal, iconographic, psychoanalytic, political	3	exact	7686486	1444-1481	114115	115			
+	3044	3	Hagia Sofia	survey	1	exact	7686485		114				
+	3045	3	Qazvin	surey	1	exact	1079247		115				
+	3046	3	Isfahan	formal, iconographic, Marxist, psychoanalytic, political	3	exact	7017459	1597	115116	116117			
+	3047	3	Chahar Bagh Avenue	formal, Marxist, political	2	adjTown	7017459		115116117				
+	3048	3	Maydan-e-Shah Imperial Square	formal, political	2	adjTown	7017459		116				
+	3049	3	Ali Qapu	survey, formal	1	adjTown	7017459		116				
+	3050	3	Imperial Mosque	formal, material culture	2	adjTown	7017459	1612	117				
+	3051	3	Chehel Sotun	survey, formal	1	adjTown	7017459		117				
+	3052	3	Hezar Jarib	survey, formal	1	adjTown	7017459		118				
+	3053	3	Bagh-e Farahabad	survey	1	adjTown	7017459	1700					
+	3054	3	Genoa	survey, Marxist	1	exact	7003142	11th century	118				
+	3055	3	Pisa	survey, Marxist	1	exact	7006082	11th century	118				
+	3056	3	Venice	survey, Marxist	1	exact	7018159	11th century	118				
+	3057	3	Baltic Sea	survey	1	exact	7013200	11th century	118				
+	3058	3	North Sea	survey	1	exact	7015931	11th century	118				
+	3059	3	Rhone	survey, Marxist	1	exact	7023890	11th century	118				
+	3060	3	Rhine Valley	survey, Marxist	1	exact	7032606	11th century	118				
+	3061	3	Danube	survey, Marxist	1	exact	7012913	11th century	118				
+	3062	3	Mainz	formal	1	exact	7017990	17th century		119			
+	3063	3	Toledo	survey, formal	1	exact	7008719			119			
+	3064	3	Florence	formal, psychoanalytic	1	exact	7000457		120121				
+	3065	3	Siena	formal, Marxist	1	exact	7011179		120	120			
+	3066	3	Paris	survey, formal	1	exact	7008038		121				
+	3067	3	Vienna	survey, formal	1	exact	7003321		121				
+	3068	3	St. Gall monastery	formal, HSS	2	exact	7032472	819	123	122			
+	3069	3	Basilica of SS. Quattro Coronati	formal	1	adjTown	7000874		123	123			
+	3070	3	Basilica of St. John in the Lateran	formal	1	adjTown	7000874		123				
+	3071	3	Basilica of St. Paul's Outside the Walls	formal	1	adjTown	7000874		123				
+	3072	3	S. Giovanni Battista dei Genovesi cloister garden	formal	1	adjTown	7000874		123				
+	3073	3	Palazzetto Venezia	formal	1	adjTown	7000874		123				
+	4001	4	Hadrian’s Villa near Tivoli	survey	1				125				
+	4002	4	Nero’s Golden House	survey	1				125				
+	4003	4	Laurentinum villas	survey	1				125			Pliny the Younger	
+	4004	4	Tusci villas	survey	1				125			Pliny the Younger	
+	4004	4	Tuscany	survey	1	adjRegion			125				
+	4006	4	Veneto	survey	1	adjRegion			125				
+	4007	4	Rome	survey	1	adjRegion			125				
+	4008	4	Constantinople	survey	1				127				
+	4009	4	Florence	survey	1				127				
+	4010	4	Villa Careggi	survey	1				127			Cosimo de’ Medici	
+	4011	4	Fontaine-de-Vaucluse [transalpine Parnassus, Grotto]	formal	2				128			Francesco Petrarca	
+	4012	4	Villa Medici at Fiesole	formal	7			1458-1472	128, 129	129	4.2, 4.3		
+	4013	4	villas at Cafaggiolo	survey	1				128				
+	4014	4	villas at Careggi	survey	1				128				
+	4015	4	villas at Poggio a Caiano		1				128				
+	4016	4	Belvedere Court (papal)	formal	8			1513, 1550, 1561, 	133134	134	4.7-4.9	Innocent VIII, Donato Bramante	
+	4017	4	Tempietto adjacent to San Pietro in Montorio	survey	1				133			Donato Bramante	
+	4018	4	St. Peter’s	survey	1				133			Donato Bramante	
+	4019	4	Sanctuary of Fortuna Primigenia at Palestrina	survey	1				134				
+	4020	4	Villa Madama	formal	3			1516	135	135	4.10, 4.11	Pope Clement VII, Raphel	
+	4021	4	Villa Farnesina	survey	1			1508–1511	135			Baldassare Peruzzi 	
+	4022	4	Villa Giulia	formal	5			1550	135, 136	136, 137	4.12-4.15	Pope Julius III	
+	4023	4	Villa Pia, Casino Pio		3			1560	138	138	4.16	Pope Pius IV, Pirro Ligorio	
+	4024	4	Boboli Gardens		1				138				
+	4025	4	Villa Medici at Castello		1				138				
+	4026	4	Villa d’Este [Fountain of the Rometta, Fountain of Tivoli, Dragon Fountain]	formal	11			1550-1572	139, 140-141	140-141	4.17-4.20		
+	4027	4	Villa Lante	formal	7				142-143	143	4.21		
+	5001	5	Loire Valley	survey	1	adjRegion	4011586		165				
+	5002	5	Fontainebleau	survey	1	adjTown	7008005		165				
+	5003	5	Chateau de Saint-Germain-en-Laye	survey	1	exact	1100344		165				
+	5004	5	Chambord	survey	1	adjTown	7017232		165				
+	5005	5	Marly	survey	3	adjTown	7009325		165, 177				
+	5006	5	Versailles	formal, iconographic	3	exact	1100363	1660-1700	165, 172, 173, 174, 175, 176, 177, 178	173, 174, 175, 176, 177			
+	5007	5	Caserta	survey	2	exact	7059155		167				
+	5008	5	Villa d'Este	survey	1	exact	1100365		167				
+	5009	5	Washington D.C.	survey	1	exact	7013962		167				
+	5010	5	Paris	survey	1	exact	7008038		167				
+	5011	5	Maisons	survey	1				168				
+	5012	5	Berny	survey	1				168				
+	5013	5	Balleroy	survey	1	adjTown	7008937		168				
+	5014	5	Fresnes	survey	1				168				
+	5015	5	Petit Bourg	survey	1	adjTown	7616186		168	169			
+	5016	5	Gesvres	survey	1				168				
+	5017	5	Rueil	survey	1	adjTown	7016452		168				
+	5018	5	Chateau de Richelieu	survey	1	adjTown	7009467		169				
+	5019	5	Vaux-le-Vicomte	survey, formal, iconographic	4	Exact	7011200	1656-1661	169, 170, 171, 172, 173	170, 171			
+	5020	5	Pratolino	survey	1	adjTown	7010020		177				
+	5021	5	Saint-Germain-en-Laye	survey	1	exact	7018796		178				
+	5022	5	Saint-Cloud	survey	1	adjTown	7009616		178				
+	5023	5	Chateau de Sceaux	survey	2	Exact	1100349		178	178			
+	5024	5	Chantilly	survey	1	adjTown	7010573		178	179			
+	5025	5	Villa Lante	survey	1	adjTown	7005115		179181				
+	5026	5	Villa Marlia	survey	1	adjTown	4006949		170, 180	180			
+	5027	5	Villa Aldobrandini	survey, formal	3	adjTown	7007013		180, 181, 185	180, 181			
+	5028	5	Frascati	survey	2	exact	7007013		181				
+	5029	5	Tivoli	survey	1	exact	7006968		181				
+	5030	5	Caprarola	survey	2	exact	7008285		181, 182, 183, 184				
+	5031	5	Barchetto	survey, formal, iconographic	4	adjTown	7008285	1556-1620	181, 182, 183, 184	182, 183			
+	5032	5	Farnese Gardens	survey, formal, iconographic	3	adjRegion	3000935	1560s-1618	184	184			
+	5033	5	Villa Giulia	survey	2	adjTown	7000874		185				
+	5034	5	Villa Borghese	surey, formal	3	exact	1100843	1609-1617	185, 186	185			
+	5035	5	Villa Pamphili	survey, formal	3	adjTown	7000874	1644-1648	185, 186	186			
+	5036	5	Villa Montalto	survey	1	adjRegion	7003163		185				
+	5037	5	Villa Ludovisi	survey	1	adjRegion	7003138		185				
+	5038	5	Pincian Hill	survey	1	adjTown	7000874		185				
+	5039	5	Villa Medici	survey	2	adjTown	7000874		185				
+	5040	5	Tuscany	survey	2	exact	7009760		186, 187				
+	5041	5	Florence	survey	2	exact	7003163		186				
+	5042	5	Lucca	survey	2	exact	7003165		186				
+	5043	5	Villa Medici at Fiesole	survey	1	adjTown	7006141		187				
+	5044	5	Villa Garzoni	survey, formal, iconographic	3	adjTown	4002793		187	188, 189			
+	5045	5	Villa Gamberaia	survey, formal, iconographic	4	adjTown	7006128	1624-1635	189, 190, 191	190, 191			
+	5046	5	Isola Bella	survey, formal, iconographic	3	adjTown	7006065	1630-1670	189, 192	192			
+	5047	5	La Reggia di Caserta	survey, formal	2	adjTown	7059155	1752	192	192			
+	7001	7	Chiswick			adjTown	1004281	1725	235	235	7.1- engraving John Rocque		
+	7002	7	Villa Rotunda			adjTown	7003204		235				
+	7003	7	Tusci			adjRegion	7009760		235				
+	7004	7	Laurentinum			adjTown	7007018		235				
+	7005	7	Stowe [Elysian Fields, Grecian Valley, Temple of Ancient Virtue, Temple of British Worthies, Queen's Temple, Hawkwell Field, etc., removed village]	formal, biography, photos		adjTown	7025107	1720, 1741	236, 240, 243, 244	242, 243	7.5 - engraving from Stowe: A Description of the House and Gardens (1788), 7.6-7.9		
+	7006	7	Stourhead [Temple of Flora, Gotto, Doric Temple, Palladian Bridges, British High Cross, exotic plant imports]			adjTown	1136724	1743-1780	236, 245-247	246	7.16		
+	7007	7	Painshill [exotic plant imports, landscape consults]			adjTown	1136686	1738, 1773	236, 245				
+	7008	7	Esher Place			adjTown	7011739		236				
+	7009	7	Twickenham			adjTown	7012095		236				
+	7010	7	Claremont			adjTown	7011739	1711, 1771	239, 251	239	7.3 - photo		
+	7011	7	Blenheim			exact	1100391	1705-24, 1764	239, 250	250	7.19, 7.20		
+	7012	7	Rousham [Cherwell River, Temple of the Mill, Praeneste Terrace, Vale of Venus, Octagonal Pond]	formal, biography		exact	7011932	1737	239, 240, 241	241	7.4		
+	7013	7	Castle Howard [Wray Woods, Carrmire Gate, Temple of Four Winds, Terrace Walk, Mausolem, Palladian Bridge, removed village]	forml, biography, photos		exact	7455588	1699, 1718, 1730, 1744	241, 244	244	7.10-7.12 		
+	7014	7	The Leasowes			adjTown	7010984		245				
+	7015	7	Woburn Farm			adjTown	7011730		245				
+	7016	7	Duncombe Park			exact	7450693		245				
+	7017	7	Studley Royal			exact	7030551		245	245	7.13, 7.14		
+	7018	7	Kirkharle Hall (East Harle) [horticulture, swamp drainage]			adjTown	7012026	1732	248				
+	7019	7	Kiddington Hall			adjTown	7031314	1739	248				
+	7020	7	Petworth			adjTown	7011411		249	249	7.17		
+	7021	7	Broadlands						249	249	7.18		
+	7022	7	Kew (Royal Botanical Gardens)			adjTown	1102904	1761	251	251	7.21		
+	7023	7	South Hampton 						251				
+	7024	7	Wentworth					1803 (?)	255	255	7.24		
+	7025	7	Endsleigh 					1816 (?)	256	256	7.25, 7.26		
+	7026	7	Bath [Queens Square, Grand Parade, Circus]			adjTown	7011197	1729-36, 1740-43, 1754-58	257	257	7.27		
+	7027	7	Bath [Royal Cresent]			adjTown	7011197	1765-75	257	257	7.27		
+	7028	7	Bath [Lansdown Cresent]			adjTown	7011197	1794	257	257	7.27		
+	7029	7	Regent's Park			exact	1103036	1811	258	258	7.28		
+	7030	7	Sezincote			exact	4010369		258	258	7.29		
+	7031	7	Muskau			adjTown	7012842		259	259	7.3		
+	7032	7	Sansoussi					1816	260				
+	7033	7	Charlottenhof					1826-28	260				
+	7034	7	Charlottenberg						260				
+	7035	7	Tiergarten					1818, 1833	260	276	7.49		
+	7036	7	Magdenburg					1824	260				
+	7037	7	Dresden					1859	260				
+	7038	7	Frankfurt an der Oder					1835	260				
+	7039	7	Babelsburg					1832-42	260				
+	7040	7	Wannsee [Klein Glienicke, Schloss Pfaueninsel]					1824, 1824-50	260				
+	7041	7	Crayford Workhouse						260		7.31		
+	7042	7	Parc Monceau [Winter Garden, Temple of Mars, Island of Rocks, Dutch Mill, Flower Marsh, Wood of Tombs, Naumachia, +]					1773	261, 262	262, 263	7.32, 7.33, 7.34		
+	7043	7	Bois de Boulogne [Bois de Bagatelles]					1777	263	263	7.35		
+	7044	7	Worlitz, Dessau [Isle of Rourseau, Stein, ferme-ornee, +]					1782, 1788-1790	263, 274	264, 274	7.36, 7.48		
+	7045	7	Ermenonville					1766	263, 264, 265	264, 265	7.37, 7.38		
+	7046	7	Moulin Joli						264				
+	7047	7	Chantilly					1774	265	265	7.39		
+	7048	7	Petit Trianon 					1781, +	265, 266	265	7.4		
+	7049	7	Desert de Retz [column, follies, botanical greenhouses and model farm]					1774	266	266	7.41		
+	7050	7	Monticello						267	269	7.44		
+	7051	7	The National Grid (Land Ordinance of 1785)					1785	267	268	7.43		
+	7052	7	Louisiana Purchase					1803	268				
+	7053	7	Jardin des Plantes						268				
+	7054	7	Elgin Botanical Garden						268				
+	7055	7	Poplar Forest [plantings, geometric articulations]					1805	269, 271	271	7.45		
+	7056	7	The Woodlands						270				
+	7057	7	University of Virginia					1828	271, 272, 273	272	7.46, 7.47		
+	7058	7	Chateau de Marly						272				
+	7059	7	Englischer Garten, Munich					1789	275				
+	7060	7	Luisenkloster, Ilm 					1784	276				
+	7061	7	Dove Cottage, Rhydal Mount						278	278	7.5		
+	7062	7	Coleorton Hall						278				
+	8001	8	Shanglin Park	Survey	2	adjTown	8687222	221 B.C.E.	283	null			
+	8002	8	Wangchuan Villa	Survey	2	adjTown	8687222	8th century C.E.	284	null			
+	8003	8	Orchid Pavilion	Survey	1	adjTown	8620656	353 C.E.	284	null			
+	8004	8	Genyue	Survey	2	adjTown	7001845	12th century C.E.	285	null			
+	8005	8	Forbidden City 	Formal	3	exact	8061551	1420	291292	285291292			
+	8006	8	Garden of Green Water	Survey	1			12th century C.E.	286	null			
+	8007	8	Xi Hu (West Lake)	Survey	2	exact	1118776	1127-1279	286	286			
+	8008	8	Wang Shi Yuan (Garden of the Master of the Fishing Nets)	Formal	3	adjTown	7018059	1140, 1770	287290	290			
+	8009	8	Liu Yuan (Garden to Linger In)	Survey	1	adjTown	7018059		287	288			
+	8010	8	Zhuo Zheng Yuan (Garden of the Unsuccessful Politician)	Survey	1	adjTown	7018059		287	287			
+	8011	8	Yi Yuan (Garden of Ease)	Survey	1	adjTown	7018059		288	288			
+	8012	8	Yuan Ming Yuan (Garden of Perfect Brightness)	Survey	2	exact	8697539	1723	293	293			
+	8013	8	Chang Chun Yuan (Garden of Everlasting Spring)	Survey	1	exact*	8697539		293				
+	8014	8	Ji Chun Yuan (Garden of Joyous Spring)	Survey	1	exact*	8697539		293				
+	8015	8	Yi He Yuan (Garden of Ease and Harmony)	Survey	3	adjTown	7001758		293294	294			
+	8016	8	Ise Shrine	Formal	3	adjTown	1080249		296297	296			
+	8017	8	Nara	Survey	3	exact	7004739	710-785	297				
+	8018	8	Heian-kyō (Kyoto)	Formal	3	exact	7004603	791	297	297			
+	8019	8	Byōdō-in	Formal	3	adjTown	1081654		298299	298			
+	8020	8	Ryōan-ji	Formal	3	adjTown	7004603	1500-1700	299302	302			
+	8021	8	Tenryū-ji	Survey	2	adjTown	7004603	1256	299	299			
+	8022	8	Saihō-ji	Formal	3	adjTown	7004603	1339	299300	300			
+	8023	8	Hana no Gosho (Flowery Palace)	Survey	1	adjTown	7004603		300				
+	8024	8	Kityama or Rokuon-ji or Kinkaku-ji	Formal	3	adjTown	7004603	1397,1408	300301	301			
+	8025	8	Jishō-ji or Ginkaku-ji	Survey	2	adjTown	7004603	1483-1490	301309	309			
+	8026	8	Daisen-in	Formal	3	adjTown	7004603	1513	302	302			
+	8027	8	Sambō-in	Formal	3	adjTown	7004603		303	303			
+	8028	8	Katsura Villa	Formal	3	adjTown	1004832	1616	305306307	305306			
+	8029	8	Shugakuin Rikyū	Formal	3	adjTown	7004603	1650s	307308	307308			
+	8030	8	Sentō Gosho	Survey	1	adjTown	7004603	1629	307				
+	8031	8	Konchi-in	Formal	2	adjTown	7004603	1611	308	308			
+	8032	8	Daichi-in	Survey	1	adjTown	7004603		308	309			
+	8033	8	Shisendō (Hall of the Immortal Poets)	Survey	1	adjTown	7004603	1636	308	309			
+	8034	8	Hōnen-in	Survey	1	adjTown	7004603		309				
+	9001	9	Pere-Lachaise Cemetery					1804	313, 333			Alexandre Theodore Brongniart	
+	9002	9	Mount Auburn					1825/1831, 1834	313, 334, 335, 336	335-336	9.27-9.31		
+	9003	9	Green Wood					1838	313, 336, 337				
+	9004	9	Royal Botanic Gardens at Kew [Palm House, Pinetum, Broad Walk]						313, 315, 318, 320	317, 321	9.4, 9.9, 9.10		
+	9005	9	Crystal Palace, Hyde Park					1851	313, 318				
+	9006	9	Tew Lodge Farm	survey	4			1808-1811	316			"John Claudius Loudon, General George Frederick
+Stratton"	
+	9007	9	Derby Arboretum	formal	3			1839	316	316	9.5	John Claudius Loudon	
+	9008	9	Hatfield House, Hertfordshire						320	320	9.7		
+	9009	9	Levens Hall, Westmoreland						320	320	9.8		
+	9010	9	Elvaston Castle in Derbyshire						320				
+	9011	9	Chatsworth [Emperor Fountain, Great Stove, ]					1816, 1836-40, 	321, 322	322	9.11	Joseph Paxton	
+	9012	9	Prince's Park, Liverpool		2			1842	322	323	9.12	Joseph Paxton	
+	9013	9	Birkenhead	formal	3			1842-1847	322, 323		9.13	Joseph Paxton	
+	9014	9	Philips Park, Manchester					1840s	323				
+	9015	9	Queen's Park, Manchester					1840s	323				
+	9016	9	Victoria Park [pavillions, drinking fountain, programming, reform intro]					1862	323				
+	9017	9	Chapel Field Gardens, Norwich [cast iron pagodas]						323				
+	9018	9	Crystal Palace Park, Sydenham, London					1856	324	324	9.15	Joseph Paxton	
+	9019	9	Elgin Botanic Garden					1801-1811	325			David Hosack	
+	9020	9	Jardin des Plantes						325			Hosack, Jefferson connection	
+	9021	9	Linnaean Botanic Garden						326			Andre Parmentier	
+	9022	9	Downing's Newburgh home						327	327	9.16		
+	9023	9	Springside, near Poughkeepsie						329			Andrew Jackson Downing, Calvert Vaux	
+	9024	9	Washington D. C., The Parade					-1852	329, 330			Andrew Jackson Downing, Calvert Vaux	
+	9025	9	Trafalgar Square, Admiral Horatio Nelson						331				
+	9026	9	Napoleonic Victory Column, Place Vendome						331	331	9.19		
+	9027	9	Washington Monument in Baltimore						331, 332		9.20, 9.21		
+	9028	9	Maximilien Godefroy's 1835 Battle Monument					1835	332, 333		9.23		
+	9029	9	Grove Street Cemetery / New Burial Ground, New Haven					1796	334				
+	9030	9	Laurel Hill in Philadelphia					1836	335				
+	9031	9	Spring Grove in Cincinnati					1845	335				
+	9032	9	Cave Hill in Louisville					1848	335				
+	10001	10	Paris	Survey, Formal	3	exact	7008038	1850-1870	358,360-367	359,361-367			
+	10002	10	London	Survey	1	exact	7011781		358360364365367				
+	10003	10	Vienna	Survey	1	exact	7003321		358				
+	10004	10	St. Petersburg	Survey	1	exact	7018216		359				
+	10005	10	Boulevards and street furniture, Paris	Survey	2	exact	7008038		360362363364365000000	361362363364366			
+	10006	10	Les Halles Centrales	Survey	1	adjTown	7008038		361364				
+	10007	10	Place du Théâtre Français	Formal	2	adjTown	7008038	1860-1875	361362	362			
+	10008	10	The Artist's Plan	Survey	1	exact	7008038	1739	362	362			
+	10009	10	Place de la Concorde	Survey	1	exact	7544568		363				
+	10010	10	Champs-Élysées	Survey	1	adjTown	7008038		363364365				
+	10011	10	Arc de Triomphe	Survey	1	adjTown	7008038	1806-1836	363				
+	10012	10	Rue de Rivoli	Survey	1	adjTown	7008038		363364	363			
+	10013	10	Arcades, Paris	Survey	1	adjTown	7008038		363				
+	10014	10	July Column, place de la Bastille	Survey	1	adjTown	7008038		363	363			
+	10015	10	Plan of Paris	Survey	2	exact	7008038		364	364			
+	10016	10	Place du Châtelet	Survey	1	adjTown	7008038		364				
+	10017	10	Bois de Boulogne	Formal	2	exact	4012764	1867-1873	364365	365			
+	10018	10	Bois de Vincennes	Formal	2	exact	7013288		365				
+	10019	10	Parc Montsouris	Survey	1	adjTown	7008038		365				
+	10020	10	Parc Monceau	Survey	1	adjTown	7008038		365				
+	10021	10	Parc des Buttes-Chaumont	Formal	2	exact	7656949*	1864-1867	365366	365366			
+	10022	10	Square des Innocents	Survey	1	adjTown	7008038		366	366			
+	10023	10	Trocadéro Palace	Survey	1	adjTown	7008038	1878	367				
+	10024	10	Champs-de-Mars	Survey	2	adjTown	7008038	1765,1855,1867	367				
+	10025	10	Galerie des Machines	Survey	1	adjTown	7008038	1867	367	367			
+	10026	10	Eiffel Tower	Formal	3	adjTown	7008038	1889	367	367			
+	10027	10	Washington, D.C.	Formal	3	exact	7013962		359368369370371	368-370			
+	10028	10	White City (Chicago)	Survey	2	exact	7013596	1893	359368	368			
+	10029	10	McMillan Plan (Washington, D.C.)	Formal	3	exact	7013962	1901	368369370	369			
+	10030	10	National Mall	Formal	2	exact	7015727	1901-1922	368369	369			
+	10031	10	Lincoln Memorial	Survey	2	adjTown	7013962	1922	369				
+	10032	10	Arlington Memorial Bridge	Survey	1	adjTown	7013962	1932	369				
+	10033	10	Jefferson Memorial	Survey	1	adjTown	7013962	1938	369				
+	10034	10	Rock Creek Park and Potomac Parkway	Formal	3	exact	1103049	1913-1939	370	370			
+	10035	10	Yosemite National Park	Formal	3	exact	7017627		371372	372			
+	10036	10	Yellowstone National Park	Formal	3	exact	7017631		372373	373			
+	11001	11	Paxton's Crystal Palace	Survey	2	adjTown	1102873	1851	376				
+	11002	11	Ringstrasse	Survey	3	adjTown	7003321	1857	377, 378				
+	11003	11	Munstead Wood, Surrey	Biographical	3	adjTown	7011743		380381	380382			
+	11004	11	Orchards	Survey	2	adjTown	7443707	1898	383	383			
+	11005	11	Les Bois de Moutiers at Varengeville	Survey	1	adjTown	7009713	1898	383	383			
+	11006	11	Garden at Champs-sur-Marne	Survey	1	adjTown	7017210		383				
+	11007	11	North forecourt at Blenheim Palace	Survey	1	adjTown	1100391		383				
+	11008	11	Park at the chateau of Courances	Survey	1	adjTown	4002969		383	383			
+	11009	11	Garden at the chateau of Villandry (restoration)	Survey	3	adjTown	7008324	1906-1924	384	384			
+	11010	11	Bagatelle (restoration of grounds)	Survey	1	adjTown	7598190	1887	385	385			
+	11011	11	Garden at the chateau of Sceaux (restoration)	Survey	1	adjTown	1100349		385				
+	11012	11	Montjuich, Parque de (park)	Survey	1	exact	1102965	1918	385	385			
+	11013	11	Ilford Manor	Survey	2	exact	7011223	1899	385	385			
+	11014	11	Hartham Park	Survey	1	adjTown	7011215	1903	386				
+	11015	11	Gardens designed by Harold Ainsworth Peto for John Annan Bryce, Ilnacullin (Garinish Island)	Survey	1	adjTown	7894596	1910	386	386			
+	11016	11	Villa La Pietra	Survey	1	adjTown	7000457		386				
+	11017	11	Villa Medici	Survey	1	adjTown	7000874		386				
+	11018	11	Villa I Tatti	Survey	2	adjTown	7000457		386	386			
+	11019	11	La Foce	Survey	1	adjTown	7006345		386				
+	11020	11	Quirinal Gardens	Survey	1	adjTown	7000874		386, 	387			
+	11021	11	The Mount, Lenox, MA	Survey	3	adjTown	7016268	1902	387	387			
+	11022	11	Faulkner Farm	Survey	3	adjTown	7013458	1896-1901	387, 388	388			
+	11023	11	Sutton Courtenay, Berkshire	Survey	2	adjTown	7011944	1895	390	390			
+	11024	11	Hidcote Manor Garden	Formal	3	adjTown	4005011	1907	390, 391	390391			
+	11025	11	Sissinghurst Castle	Formal	3	adjTown	7447292	1930	391, 392	392			
+	11026	11	Cliveden Gardens	Survey	1	adjTown	7456218		393				
+	11027	11	Hever Castle Gardens	Survey	1	adjTown	7462011		393				
+	11028	11	Reef Point	Survey	1	adjTown	1008230		393				
+	11029	11	Tuxedo Park	Survey	1	exact	7015827		393				
+	11030	11	Crosswicks, Jenkintown, PA	Survey	1	adjTown	2089611		393				
+	11031	11	Brick House Noroton Point	Survey	1	adjTown	2016766		393				
+	11032	11	Dumbarton Oaks	Formal	4	adjTown	7015724		395, 396	394, 395			
+	11033	11	The Eyrie Garden	Survey	2	adjTown	2045554	1929	396	396			
+	11034	11	Acadia National Park	Survey	1	exact	1101364		396				
+	11035	11	Henry Croft Garden	Survey	1	adjTown	7014145	c.1928	*not mentioned in text body	397			
+	11036	11	Sarah P. Duke Memorial Gardens, Duke University	Survey	1	adjTown	7013625		397				
+	11037	11	Huntington Gardens	Survey	2	adjTown	7014461		397	397			
+	11038	11	Hillside Club residential developments, Berkeley	Survey	1	adjTown	7013386		398				
+	11039	11	David L. James House, Carmel Highlands	Survey	1	adjTown	1112771	1921	398				
+	11040	11	Green Gables, Woodside	Survey	1	adjTown	7014642	1911, 1926-28	398	398			
+	11041	11	Filoli	Survey	2	adjTown	7014642	-1916	398	398			
+	11042	11	Hearst Castle	Survey	2	adjTown	7014466		398399				
+	11043	11	Panama-California Exposition (San Diego)	Survey	1	adjTown	7014455	1915	399				
+	11044	11	Greenacres, Beverly Hills	Survey	2	adjTown	7013418	1925-1929	399	399			
+	11045	11	Casa del Herrero (House of the Blacksmith)	Survey	2	adjTown	7017752	1922-1925	399	399			
+	11046	11	Gone With the Wind movie set garden	Survey	2	adjTown	2010932		399				
+	11047	11	Il Brocino, Montecito	Formal	2	adjTown	7014094	1923	400	400			
+	11048	11	Vizcaya	Survey	3	adjTown	7014044	1912-1916	400	400			
+	11049	11	Parklane, Santa Barbara	Survey	1	adjTown	7017752		401				
+	12001	12	Saltaire	Survey	1	adjTown	7010449	1853	404				
+	12002	12	Bournville	Survey	2	exact	7465094		404				
+	12003	12	Port Sunlight	Survey	2	exact	7010598	1888	404				
+	12004	12	Letchworth	Annales	3	exact	7011887	1903	405406407				
+	12005	12	Welwyn Garden City	Survey	1	exact	7011872	1919	405	405			
+	12006	12	Hampstead Garden Suburb	Formal	2	exact	4012696	1907	406	406			
+	12007	12	Cité Industrielle (Plan)	Annales	3	null	null	1889-1904	406407408	407408			
+	12008	12	Eixample	Survey	1	adjTown	7007426	1859	408	408			
+	12009	12	La ciudad lineal	Survey	2	adjTown	7007426	1882	408	408			
+	12010	12	Park Güell	Formal, Iconographic	4	adjTown	7007426	1900-1914	409410411412	410411			
+	12011	12	City for Three Million Inhabitants	Survey	3	null	null	1922	414415	415			
+	12012	12	The Radiant City (Plan)	Formal, Annales	3	null	null	1930	415416	416			
+	12013	12	Yorkship Village (Fairview, Camden, New Jersey)	Post-structural	3	adjTown	7013531	1918	417418	417			
+	12014	12	Forest Hills Gardens	Formal	3	adjTown	7015820	1909	417418	418			
+	12015	12	Sunnyside Gardens	Survey	3	adjTown	7022659	1924	420421	421			
+	12016	12	Radburn	Survey	3	adjTown	7014157	1929	420421	421			
+	12017	12	Broad Acre City (Plan)	Survey	2	null	null		422423				
+	12018	12	Bronx River Parkway	Survey	3	adjTown	7022658	1912-1923	425	425			
+	12019	12	Saw Mill River	Survey	1	adjRegion	7014612		425				
+	12020	12	Hutchinson River Parkway	Survey	1	adjTown	7022658		425				
+	12021	12	Taconic State Parkway	Survey	1	adj Region	7014612	1940-1950	425	425			
+	12022	12	Jones Beach	Survey	3	adjRegion	7014612	1929	426	426			
+	12023	12	Douglas Park	Survey	1	adjTown	7013596		428				
+	12024	12	Garfield Park	Survey	2	adjTown	7013596	1912	428	428			
+	12025	12	Columbus Park	Formal	3	adjTown	7014254	1916	429	429			
+	12026	12	Lincoln Memorial Garden	Formal	2	adjTown	2026961	1935	429				
+	12027	12	Theme Center (Trylon, Perisphere, Helicline)	Survey	2	adjTown	7022659	1939	430	431			
+	12028	12	Democracity	Survey	2	adjTown	7022659	1939	431				
+	12029	12	Futurama	Survey	3	adjTown	7022659	1939	431432				
+	13001	13	Paris	survey, formal, iconographic	1	exact	7008038		436				
+	13002	13	Exposition Internationale des Arts Decoratifs et Industriels Modernes	survey, formal, iconographic	2	adjTown	7008038		434,436, 437, 438	436			
+	13003	13	New York World's Fair	survey	1	adjTown	7007567		435436454				
+	13004	13	Barcelona Pavilion	formal	2	adjTown	7007426						
+	13005	13	Garden of Water and Light	formal,iconographic	2	adjTown	7008038		436				
+	13006	13	Villa Noailles	formal	2	adjTown	7023841		436, 443	436437			
+	13007	13	Hyeres	formal	2	exact	7023841		436				
+	13008	13	Noailles hotel	formal	1	adjTown	7008038		437				
+	13009	13	Biltmore Estate	survey	1	adjTown	2173043		437				
+	13010	13	Harvard University	survey	1	adjTown	7015057		437, 441,442,449,451				
+	13011	13	Naumkeag	formal,psychoanalytic,phenomenological	3	adjTown	7014544	1926-1935	438439440	438, 439,440			
+	13012	13	Pullman 	survey	1	exact	7015706		438				
+	13013	13	Tuxedo Park	survey	1	exact	7015827		438				
+	13014	13	Granada	survey	1	exact	7007703		438, 439				
+	13015	13	Generalife	survey	1	adjTown	7007703		439				
+	13016	13	Seville	survey	1	exact	7008676		439				
+	13017	13	Cordoba	survey	1	exact	7002817		439				
+	13018	13	China	survey,iconographic	1	exact	1000111		439, 440, 441,442				
+	13019	13	Millbrook	formal, iconographic, phenomenological	3	exact	2070555		440441444				
+	13020	13	Innisfree	formal, iconographic, phenomenological	3	adjTown	2070555		440441442444	441442			
+	13021	13	Royal Horticultural Society in England	survey	1	exact	1103139		440				
+	13022	13	Kyoto	survey	1	exact	7004603		441				
+	13023	13	Japan	survey,iconographic	1	exact	1000120		441442448455				
+	13024	13	Stourhead	survey	1	adjTown	1030029		441				
+	13025	13	Shugakuin Rikyu	survey	1	adjTown	7004603		441				
+	13026	13	Fallingwater	survey	1	adjTown	2090809		443				
+	13027	13	Bear Run	survey	1	exact	2155549		443				
+	13028	13	Chermayeff House	formal,psychoanalytic,phenomenological,post-structural	2	adjTown	4004750		443				
+	13029	13	Bentley Wood	formal,psychoanalytic,phenomenological,post-structural	2	adjTown	4004750		443				
+	13030	13	St. Ann's Hill	formal,psychoanalytic,phenomenological,post-structural	2	adjTown	7011730		443	443			
+	13031	13	Brazil	survey	3	exact	1000047		444, 445,446				
+	13032	13	Recife	survey	2	exact	7005443		444446				
+	13033	13	Euclides da Cunha Square	survey,formal	1	adjTown	7005443		444	444			
+	13034	13	Ministry of Education and Public Health	formal	2	adjTown	7005443		444445				
+	13035	13	Odette Monteiro Garden	formal	2	adjTown	7017095	1948	445				
+	13036	13	Luiz Cezar Fernandes Garden	formal	2	adjTown	7017095	1948	445	445			
+	13037	13	Correas	formal	2	adjTown	7017095	1948	445				
+	13038	13	Rio de Janeiro	survey	3	exact	7017095		445446				
+	13039	13	Sitio Santo Antonio da Bica	formal,HSS	2	adjTown	1004211	1949	445446	446			
+	13040	13	São José dos Campos	survey,formal	2	exact	1136572		446				
+	13041	13	São Paulo	survey	3	exact	7017121						
+	13042	13	Flamengo Park	survey	2	adjTown	7017095	1954	446				
+	13043	13	Copacabana Beach	survey,formal	2	adjTown	7018798	1970	446	446			
+	13044	13	Brasilia	survey	2	exact	7005845	1956					
+	13045	13	Ministry of the Army	survey	1	adjTown	7005845	1956	446				
+	13046	13	Ministry of Justice	survey	1	adjTown	7005845	1956	446				
+	13047	13	Ministry of Foregin Affairs	survey,formal,post-colonial	1	adjTown	7005845	1965	446	447			
+	13048	13	Portugal	survey	1	exact	1000090		447				
+	13049	13	Conimbriga	survey	1	exact	7031751		447	447			
+	13050	13	Guadalajara	survey	1	exact	7007110		447				
+	13051	13	Les Colombieres	survey	1	exact	7632306		447				
+	13052	13	Menton	survey	1	exact	7009337		447				
+	13053	13	Mazamitla	survey	1	exact	1017842		447448				
+	13054	13	Mexico	survey	3	exact	7005560		447, 448,449				
+	13055	13	Mexico City	survey,formal	3	exact	7007227		447				
+	13056	13	Tacubaya district	survey	1	exact	1005699		447				
+	13057	13	San Angel Gardens	formal,psychoanalytic,post-colonial	2	adjTown	8711831	1951	447448	448			
+	13058	13	El Cabrío	formal,psychoanalytic,post-colonial	2	adjTown	8711831		447448	448			
+	13059	13	Jardines del Pedegral	formal,post-colonial	3	exact	8711831		447448	448			
+	13060	13	Cuicuilco	survey	1	exact	1100624		447				
+	13061	13	Copilco	survey	1	adjTown	7007227		447				
+	13062	13	Palm Springs	survey	1	exact	2012983		448	448			
+	13063	13	Edgar J. Kauffmann House	survey	1	adjTown	2012983	1946	448				
+	13064	13	San Cristobal	formal,post-colonial	2	adjTown	7007227		448	449			
+	13065	13	Egerstrom House and Stables	formal,post-colonial	2	adjTown	7007227	1967-1969	448, 449	449			
+	13066	13	California	survey	3	exact	7007157		448449450451452				
+	13067	13	Menlo Park	survey	1	exact	2012661	1940	449452	452			
+	13068	13	Aptos	survey,formal	2	exact	2010017		449	450			
+	13069	13	Donnell Garden	survey,formal	3	adjTown	2014315		450	450			
+	13070	13	Sonoma	survey	1	exact	2014315						
+	13071	13	San Francisco	survey	1	exact	7014456		451	451			
+	13072	13	Aluminum Garden	survey,formal	2	adjTown	2096004						
+	13073	13	Wonderland Park	survey,formal	2	adjTown	2096004						
+	13074	13	Hollywood Hills	survey,formal	2	exact	2096004		453				
+	13075	13	Columbus	survey	3	exact	7013644						
+	13076	13	Miller Garden	formal	3	adjTown	7013644	1955	453	453454			
+	13077	13	Flatrock River	formal	1	exact	1123952		454				
+	13078	13	Fountain Place	survey,formal	1	adjTown	7013503		454	454			
+	13079	13	Allied Bank Tower	survey,formal	1	adjTown	7013503		454				
+	13080	13	Dallas	survey,formal	1	exact	7013503		454				
+	13081	13	Ridgewood	formal,psychoanalytic	2	exact	2066019		455	455			
+	14001	14	Disneyland	Survey	3	adjTown	7013297	1954	458464465466467	466			
+	14002	14	Long Island Levittown	Survey	3	exact	2070198		460461	459			
+	14003	14	New Jersery Levittown	Survey	1	exact	2066525		461				
+	14004	14	Country Club Plaza	Survey	2	adjTown	7013820	1922	461462	462			
+	14005	14	Shaker Square	Survey	2	adjTown	7013608		462				
+	14006	14	Highland Park Village	Survey	3	adjTown	7013503		462				
+	14007	14	Suburban Square	Survey	2	adjTown	2090309		462				
+	14008	14	Times Building	Survey	1	adjTown	2090309		462				
+	14009	14	Southdale Center	Survey	2	adjTown	2054351	1956	463				
+	14010	14	Houston Galleria	Survey	2	adjTown	7013727		463464	463			
+	14011	14	Post Oak Boulevard Street Scape	Survey	1	adjTown	7013727		464	464			
+	14012	14	Rockefeller Center	Survey	1	adjTown	7022657		464				
+	14013	14	West Edmenton Mall	Survey	3	adjTown	7013032	1981-1985	464				
+	14014	14	Quincy Market	Survey	1	adjTown	7013445		464				
+	14015	14	South Street Seaport	Survey	1	adjTown	7022657		464				
+	14016	14	Harborplace	Survey	1	adjTown	7013352		464				
+	14017	14	New York World's Fair	Survey	1	adjTown	7022659	1939	465				
+	14018	14	Disney World	Survey	3	adjTown	7014304		466,	467468			
+	14019	14	Fantasyland, Disneyland	Survey	1	adjTown	7013297		466467				
+	14020	14	Adventureland, Disneyland	Survey	1	adjTown	7013297		466467				
+	14021	14	Frontierland	Survey	1	adjTown	7013297		467				
+	14022	14	Tomorrowland	Survey	1	adjTown	7013297		467				
+		15	Central Park	Survey	1	exact	1102739		470				
+		15	New York City	Survey	1	exact	7007567		470, 477				
+		15	Boston	Survey	1	exact	7013445		470, 477				
+		15	Washington, D.C.	Survey	1	exact	7013962		470				
+		15	Outlook Tower	Survey	1	adjTown	7009546		471				
+		15	Fifth Avenue (NYC)	Survey	1	adjTown	7007567		471				
+		15	Wilshire Boulevard	Survey	1	adjTown	7023900		471				
+		15	Michigan Avenue	Survey	1	adjTown	7013596		471				
+		15	Paris	Survey	1	adjTown	7008038		472				
+		15	Colonial Williamsburg	Formal	3	exact	7015762	1926	472, 475, 476	476			
+		15	Pennsylvania State Building	Survey	2	adjTown	7013596	1893	473				
+		15	World's Columbian Exposition of 1893	Survey	1	adjTown	7013596	1893	473				
+		15	Independence Hall	Survey	1	adjTown	7014406		473				
+		15	Court of Honor	Survey	1	adjTown	7013596	1893	473				
+		15	Mount Vernon	Survey	1	exact	7017620		473				
+		15	Disney's Magic Kingdom	Survey	1	adjTown	7014304		473	473			
+		15	Stockbridge	Survey	1	exact	7014544		474				
+		15	Litchfield	Survey	1	exact	2016828		474				
+		15	Sharon	Survey	1	exact	2017371		475				
+		15	Levittown	Survey	1	exact	2070198		475				
+		15	Charleston	Survey	1	exact	7013582		475				
+		15	Santa Barbara	Survey	1	exact	7017752		475				
+		15	New Orleans	Survey	1	exact	7014214		475				
+		15	Santa Fe	Survey	2	exact	7013950		475				
+		15	Celebration	Survey	2	adjTown	1002756		476	476			
+		15	Greenwich Village	Survey	1	exact	7015857		477				
+		15	Soho	Survey	1	adjTown	7007567		477				
+		15	Oakland	Survey	1	exact	7014250		478				
+		15	Laguna West	Survey	2	exact	2479395	1990	478	478			
+		15	Seaside	Formal	3	adjTown	2000290	1981	478, 479, 480	479, 480			
+		15	Providence	Survey	1	exact	7013952		480				
+		15	South Bronx	Survey	1	adjTown	7007567		480				
+		15	Philadelphia	Survey	2	exact	7014406	1960	482, 483	483			
+		15	The Woodlands	Survey	2	exact	2108021	1970-1974	483				
+		15	Freeway Park	Survey	2	adjTown	7014494	1970-1976		484			
+		15	Lovejoy Plaza	Survey	1	adjTown	7014273	1961-1968		484			
+		15	Donnell Garden	Survey	1	adjTown	7014516		484				
+		15	Ghiradelli Square	Survey	1	adjTown	7014456	1962-1965	484				
+		15	Walter and Elise Haas Promenade	Survey	1	adjTown	7001371	mid-1980s	485				
+		15	Franklin Delano Roosevelt Memorial	Formal	2	adjTown	7013962	1997	485	485			
+		15	Sea Ranch	Formal	3	adjTown	7014516	mid-1960s	485, 486	485, 486			
+		15	Gasworks Park	Survey	1	adjTown	7014494	1970-1978	486				
+		15	Bloedel Reserve	Survey	1	adjTown	1006381	1985	486				
+		15	Red River	Survey	1	adjTown	2067058	1999		487			
+		15	Nazca Lines	Survey	1	adjTown	7018050		487				
+		15	Serpent Mound	Survey	1	exact	2652752		487				
+		15	Spiral Jetty	Formal	2	adjRegion	7021126	1970	489, 490	488			
+		15	Observatory	Survey	2	adjRegion	1112107	1971, 1977		488			
+		15	Star Axis	Survey	1	adjTown	7013267	1974		489			
+		15	Roden Crater Project	Survey	1	adjTown	7013764	1970s		489			
+		15	Sun Tunnels	Survey	2	adjTown	2475490	1973-1976	490				
+		15	30 Below	Survey	1	adjTown	7013861	1980	490				
+		15	Star Crossed	Survey	1	adjTown	7014324	1980	490				
+		15	Dark Star Park	Survey	1	adjTown	7013321	1984	490				
+		15	Up and Under	Formal	3	adjTown	1031474	1998	490, 491	490			
+		15	"""Garden of Cosmic Speculation"""	Formal	3	adjTown	7008075	1990-2000	491, 492	491, 492			
+		15	St. Andrews	Survey	2	adjTown	7009562	1400s, 1764	493				
+		15	Pebble Beach Golf Links	Survey	1	adjTown	2013297	1918	494				
+		15	Cypress Point	Survey	1	adjTown	2013297	1928	494				
+		15	Emerald Dunes Golf Course	Survey	2	adjTown	7014608	1990	495	494			
+		15	Desert Highlands Golf Club	Survey	1	adjTown	7014491	1984	495				
+		15	Parc de la Villette	Formal	3	adjTown	7008038	1984-1985	495, 496	495, 496			
+		15	Parc André Citröen	Survey	2	adjTown	7008038	1985-1992	496, 497	496			
+		15	Parc Bercy	Survey	2	adjTown	7008038		496, 497				
+		15	Little Sparta	Formal	2	adjTown	4003449		497, 498	497			
+		15	Vietnam Veterans Memorial	Formal	3	adjTown	7013962	1981, 1982	498, 499	498, 499			
+		15	The Wave Field	Formal	3	adjTown	7013304	1995	500	500			
+	16001	16	Ngama cave	survey, iconographic, psychoanalytic, phenomenological	2	adjTown	1098673		504				
+	16002	16	Yuendumu	survey, iconographic, psychoanalytic, phenomenological	2	exact	1098673		504				
+	16003	16	Great Plains	survey, post-structural	1	exact	1110996		505				
+	16004	16	Fort Union	survey, post-structural	1	exact	1102095		505				
+	16005	16	Santa Fe Trail	survey, post-structural	1	exact	7031107		505				
+	16006	16	Long Island	survey, post-structural	1	exact	7015899		505				
+	16007	16	Westchester County	survey, post-structural	1	exact	7014612		505				
+	16008	16	Bronx River parkway	survey, post-structural	1	adjRegion	7007568		505				
+	16009	16	Taconic parkway	survey, post-structural	1	adjRegion	7007568		505				
+	16010	16	Merritt parkway	survey, post-structural	1	adjRegion	7007159		505				
+	16011	16	Crater Lake	survey	1	exact	7017633			507			
+	16012	16	Boston	survey, Marxist, post-structural	1	exact	7013445		509				
+	16013	16	Philadelphia	survey, Marxist, post-structural	1	exact	7014406		509				
+	16014	16	Chicago	survey, Marxist, post-structural	1	exact	7013596		509				
+	16015	16	Seattle	survey, Marxist, post-structural	1	exact	7014494		509	506			
+	16016	16	Central Park	survey, psychoanalytic	1	exact	1102739		509				
+	16017	16	Ur	survey, iconographic	1	adjTown	7002485		511				
+	16018	16	Knossos	survey, iconographic	1	exact	7228703		511				
+	16019	16	Teotihuacan	survey, iconographic	1	exact	7007218		511				
+	16020	16	Vaux-le-Vicomte	survey, psychoanalytic, phenomenological	1	exact	7011200		511				
+	16021	16	Versailles	survey, psychoanalytic, phenomenological	1	exact	1100363		511				
+	16022	16	Dresden	survey	1	exact	7004455		512				
