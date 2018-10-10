@@ -1,5 +1,6 @@
-# LSI-misc
+# LSI-misc -very old scripts and dirty data
 Various data parsing scripts for the landscape studies initiative
+Really nothing useful nor important, just getting everything into uva hands
 
 1. imageDictionary.js
 	* this is to run through the 6500 image list (excel/csv) and catalog case-sites into json format (evolving, not to be added on form at bottom of readme) so that RA additions can be more focused on method and integrating new material
